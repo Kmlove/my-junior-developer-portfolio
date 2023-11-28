@@ -4,7 +4,11 @@ function AboutMe() {
   return (
     <div id="aboutMe">
       <h2>About Me</h2>
-      <h3>My Background:</h3>
+      <p> I'm a recent graduate of Flatiron School's Software Engineering Bootcamp, marking the culmination of my immersive journey into the world of coding and problem-solving. Fueled by a passion for continuous learning, I thrive on turning challenges into opportunities. I believe in the power of technology to make a positive impact, and I'm excited ready to bring my skills to your next project!</p>
+      <p>In my free time I enjoy cooking, playing soccer, biking and spending time with my friends and family.</p>
+
+      {/* Put this behind a SEE MORE toggle */}
+      {/* <h3>My Background:</h3>
       <p>I'm a graduate of Purdue University with a Bachelor of Science degree from the College of Health and
           Human Sciences, with a concentration of Pre-Physician Assistant (PA) and a minor in Psychology. I have been
           working in the healthcare field as a Physical Therapy Technician for the past 6 years but have recently
@@ -19,9 +23,7 @@ function AboutMe() {
           this bootcamp I will be searching for employment as a developer in the DMV area. I am a hardworking and
           determined person and very excited to break into this industry!</p>
       <h3>For Fun:</h3>
-      <p>Outside of work I enjoy cooking and playing soccer. I volunteer as a youth coach in my area as I want to
-          continue to spread to knowledge of the game to as many children as I can. I also still play any time I
-          get the chance.</p>
+      <p>Outside of coding I enjoy cooking and being active. I like to play soccer, and go biking and hiking in my area.</p> */}
     </div>
   )
 }

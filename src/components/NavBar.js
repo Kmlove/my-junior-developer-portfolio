@@ -1,12 +1,12 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
 import { Navbar, Nav} from 'react-bootstrap'
+import '../css/navBarStyles.css'
 
 function NavBar() {
   return (
     <Navbar >
+        <h3>KL</h3>
         <Nav variant="underline" defaultActiveKey="#home">
-            <h3>KL</h3>
             <Nav.Item>
                 <Nav.Link eventKey="#home" href="#home">Home</Nav.Link>
             </Nav.Item>

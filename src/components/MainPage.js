@@ -6,6 +6,7 @@ import Aboutme from './AboutMe'
 import Projects from './Projects'
 import Contact from './Contact'
 import Footer from './Footer'
+import Skills from './Skills'
 
 function MainPage() {
   return (
@@ -14,6 +15,7 @@ function MainPage() {
       <div id="main-container">
         <Home />
         <Aboutme />
+        <Skills />
         <Projects />
         <Contact />
         <Footer />

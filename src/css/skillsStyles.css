@@ -1,0 +1,19 @@
+#skills-icon-container {
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    padding-top: 10px;
+    border: 1px solid red;
+    width: 80px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon img {
+    height: 65px;
+}

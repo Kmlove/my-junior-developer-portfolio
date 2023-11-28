@@ -5,18 +5,19 @@ import NavBar from './NavBar'
 import Aboutme from './AboutMe'
 import Projects from './Projects'
 import Contact from './Contact'
+import Footer from './Footer'
 
 function MainPage() {
   return (
     <>
       <NavBar />
-      <Routes>
-        <Route path='/home' element={<Home />} />
-        <Route path='/aboutMe' element={<Aboutme />} />
-        <Route path='/projects' element={<Projects />} />
-        <Route path='/contact' element={<Contact />} />
-      </Routes>
-      
+      <div id="main-container">
+        <Home />
+        <Aboutme />
+        <Projects />
+        <Contact />
+        <Footer />
+      </div>
     </>
   )
 }

@@ -1,0 +1,41 @@
+#contact-form {
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contact-form-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-names {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    gap: 8px;
+}
+
+#contact input {
+    padding: 5px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#contact textarea {
+    padding: 5px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#contact label {
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+button[type="submit"] {
+    width: 30%;
+    margin: 0 auto;
+}

@@ -5,15 +5,24 @@
 
 .icon {
     padding-top: 10px;
-    border: 1px solid red;
     width: 80px;
     height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s ease-in-out;
 }
 
 .icon img {
-    height: 65px;
+    height: 60px;
+}
+
+.icon p {
+    font-size: .8rem;
+    margin-top: 5px;
+}
+
+.icon:hover{
+    transform: scale(1.2);
 }

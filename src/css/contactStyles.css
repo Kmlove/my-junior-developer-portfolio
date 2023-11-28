@@ -39,3 +39,21 @@ button[type="submit"] {
     width: 30%;
     margin: 0 auto;
 }
+
+#socials {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-icons {
+    font-size: 3rem;
+    text-decoration: none;
+    color: navy;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons:hover {
+    transform: scale(1.2);
+}

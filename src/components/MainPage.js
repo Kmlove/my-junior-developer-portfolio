@@ -1,5 +1,4 @@
 import React from 'react'
-import { Route, Routes } from 'react-router-dom'
 import Home from './Home'
 import NavBar from './NavBar'
 import Aboutme from './AboutMe'
@@ -7,6 +6,7 @@ import Projects from './Projects'
 import Contact from './Contact'
 import Footer from './Footer'
 import Skills from './Skills'
+import Blog from './Blog'
 
 function MainPage() {
   return (
@@ -17,6 +17,7 @@ function MainPage() {
         <Aboutme />
         <Skills />
         <Projects />
+        <Blog />
         <Contact />
         <Footer />
       </div>

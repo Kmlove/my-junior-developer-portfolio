@@ -23,7 +23,7 @@ function Projects() {
               <p>GoodSport is a sports team schedule management app that will allow users to be added to a team, and view all events that are associated with their team. Coaches can add, update and delete events for their teams.</p>
             </div>
             <div id="links">
-              <a className="disabled-link" href="" target='_blank' title='GoodSport not yet live' rel="noreferrer">Live Site</a>
+              <a className="disabled-link" href="" target='_blank' title='GoodSport not yet live' rel="noreferrer" onClick={e => e.preventDefault()}>Live Site</a>
               <a href='https://github.com/Kmlove/GoodSport-Phase-5-Project' target="_blank" title='GoodSport on GitHub' rel="noreferrer">GitHub</a>
             </div>
           </div>
@@ -40,8 +40,8 @@ function Projects() {
               <p>FitConnect seamlessly blends fitness logging with a social media twist, allowing users to share workout insights and post reflections on stored routines, and create new shareable workouts for others to engage with and provide feedback on.</p>
             </div>
             <div id="links">
-              <a className="disabled-link" href="" target='_blank' title='FitConnect not yet live' rel="noreferrer">Live Site</a>
-              <a href='https://github.com/Kmlove/FitConnect-Phase-4-Project' target="_blank" title='FitConnect on GitHub' rel="noreferrer">GitHub</a>
+              <a className="disabled-link" href="" target='_blank' title='FitConnect not yet live' rel="noreferrer" onClick={e => e.preventDefault()}>Live Site</a>
+              <a href='https://github.com/Kmlove/FitConnect-Phase-4-Project' target="_blank" title='FitConnect on GitHub' rel="noreferrer" >GitHub</a>
             </div>
           </div>
         </div>{/*end tile2 div*/}
@@ -57,7 +57,7 @@ function Projects() {
               <p>A virtual game store that offers an immersive shopping experience where you can explore, curate and buy your favorite games and sell games with a bit of price negotiation, all through simple commands.</p>
             </div>
             <div id="links">
-              <a className="disabled-link" href="" target='_blank' title='FlatStop not yet live' rel="noreferrer">Live Site</a>
+              <a className="disabled-link" href="" target='_blank' title='FlatStop not yet live' rel="noreferrer" onClick={e => e.preventDefault()}>Live Site</a>
               <a href='https://github.com/Kmlove/FlatStop-Phase-3' target="_blank" title='FlatStop on GitHub' rel="noreferrer">GitHub</a>
             </div>
           </div>

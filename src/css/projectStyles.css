@@ -81,8 +81,11 @@
 
 
 .disabled-link {
-    pointer-events: none; /* Disable pointer events to prevent clicks */
+    /* pointer-events: none; /* Disable pointer events to prevent clicks */
     color: gray !important; /* Optionally, change the color to indicate it's disabled */
     text-decoration: none; /* Optionally, remove the underline */
 }
-  
+
+.disabled-link:hover {
+    cursor: not-allowed;
+}

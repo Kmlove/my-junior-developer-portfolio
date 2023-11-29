@@ -40,7 +40,7 @@ function Projects() {
                 <img className="icon-p" src={sqliteIcon} alt='SQLite Icon'/>
             </div>
             <div id="links">
-              <a className="disabled-link" href="" target='_blank' title='GoodSport not yet live' rel="noreferrer">Live Site</a>
+              <a className="disabled-link" href="" target='_blank' title='GoodSport not yet live' rel="noreferrer" onClick={e => e.preventDefault()}>Live Site</a>
               <a href='https://github.com/Kmlove/GoodSport-Phase-5-Project' target="_blank" title='GoodSport on GitHub' rel="noreferrer">GitHub</a>
             </div>
           </div>
@@ -61,7 +61,7 @@ function Projects() {
                 <img className="icon-p" src={sqliteIcon} alt='SQLite Icon'/>
             </div>
             <div id="links">
-              <a className="disabled-link" href="" target='_blank' title='FitConnect not yet live' rel="noreferrer">Live Site</a>
+              <a className="disabled-link" href="" target='_blank' title='FitConnect not yet live' rel="noreferrer" onClick={e => e.preventDefault()}>Live Site</a>
               <a href='https://github.com/Kmlove/FitConnect-Phase-4-Project' target="_blank" title='FitConnect on GitHub' rel="noreferrer">GitHub</a>
             </div>
           </div>
@@ -86,7 +86,7 @@ function Projects() {
                 <img className="icon-p" src={sqliteIcon} alt='SQLite Icon'/>
             </div>
             <div id="links">
-              <a className="disabled-link" href="" target='_blank' title='FlatStop not yet live' rel="noreferrer">Live Site</a>
+              <a className="disabled-link" href="" target='_blank' title='FlatStop not yet live' rel="noreferrer" onClick={e => e.preventDefault()}>Live Site</a>
               <a href='https://github.com/Kmlove/FlatStop-Phase-3' target="_blank" title='FlatStop on GitHub' rel="noreferrer">GitHub</a>
             </div>
           </div>

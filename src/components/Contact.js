@@ -49,14 +49,14 @@ function Contact() {
       </form>
 
       <div id="socials">
-        <a href='https://www.linkedin.com/in/kimberlymlove' target='_blank'>
+        <a href='https://www.linkedin.com/in/kimberlymlove' target='_blank' rel="noreferrer" title="Go to Kim's LinkedIn">
           <FontAwesomeIcon className="social-icons" icon={faLinkedin}></FontAwesomeIcon>
         </a>
-        <a href='https://github.com/Kmlove' target='_blank'>
+        <a href='https://github.com/Kmlove' target='_blank' rel="noreferrer" title="Go to Kim's GitHub">
           <FontAwesomeIcon icon={faGithub} className="social-icons"/>
         </a>
-        <a href='https://medium.com/@kimberlymlove15' target='_blank'>
-          <FontAwesomeIcon icon={faMedium} className="social-icons"/>
+        <a href='https://medium.com/@kimberlymlove15' target='_blank' rel="noreferrer">
+          <FontAwesomeIcon icon={faMedium} className="social-icons" title="Go to Kim's blog on Medium"/>
         </a>
       </div>
     </div>

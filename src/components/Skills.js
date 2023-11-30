@@ -10,11 +10,14 @@ import gitIcon from '../images/git.svg'
 import githubIcon from '../images/github.svg'
 import sqlIcon from '../images/sql.svg'
 import sqliteIcon from '../images/sqlite.svg'
+import commandLineIcon from "../images/command-line.svg"
+import restfulApiIcon from '../images/restul-api.svg'
+import vscodeIcon from '../images/vscode.svg'
 
 function Skills() {
   return (
     <div id="skills">
-        <h2>Skills</h2>
+        <h2>Skills & Tools</h2>
         <div id="skills-icon-container">
             <div className='icon'>
                 <img src={htmlIcon} alt='HTML Icon'/>
@@ -53,8 +56,20 @@ function Skills() {
                 <p>GitHub</p>
             </div>
             <div className='icon'>
-                <img src={gitIcon} alt='git Icon'/>
+                <img src={gitIcon} alt='Git Icon'/>
                 <p>Git</p>
+            </div>
+            <div className='icon'>
+                <img src={vscodeIcon} alt='VS Code Icon'/>
+                <p>VS Code</p>
+            </div>
+            <div className='icon'>
+                <img src={commandLineIcon} alt='Command Line Icon' />
+                <p>Command Line</p>
+            </div>
+            <div className='icon' >
+                <img style={{height: "150px"}} src={restfulApiIcon} alt='RESTful Icon'/>
+                <p>RESTful APIs</p>
             </div>
         </div>
     </div>

@@ -1,3 +1,7 @@
+#blogSection {
+    padding-top: 70px;
+}
+
 #blog-header {
     text-align: center;
     width: 65%;
@@ -19,7 +23,7 @@
 }
 
 .blog {
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #f2ebe9;
     width: 65%;
     margin: 0 auto;
     display: flex;

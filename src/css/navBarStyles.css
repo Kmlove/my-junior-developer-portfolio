@@ -1,23 +1,27 @@
 nav.navbar {
+    background-color: #f2ebe9;
     justify-content: space-between;
     position: fixed;
     top: 0;
     z-index: 1;
     width: 100vw;
-    border: 1px solid red;
 }
 
 .navbar-nav {
     margin-right: 150px;
 }
 
-nav.navbar h3 {
-    position: absolute;
-    left: 20px;
-}
-
 .nav-item a {
     font-size: 1.2rem;
+    color: #de5499;
+}
+
+.nav-item a:hover{
+    color: #9c2d65 !important;
+}
+
+.nav-item a.active{
+    color: #9c2d65 !important;
 }
 
 #KLlogo {

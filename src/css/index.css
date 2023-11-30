@@ -4,9 +4,22 @@
   font-family: 'Times New Roman', Times, serif;
 }
 
+#app {
+  background-color: #eddcd9;
+  color: #264143;
+}
+
 #main-container {
-  border: 1px solid red;
   max-width: 1400px;
   margin: 0 auto;
   padding: 20px;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: bold !important;
+  color: #de5499 !important;
+  border-bottom: 3px solid #de5499;
+  width: fit-content;
+  margin: 20px auto !important;
 }

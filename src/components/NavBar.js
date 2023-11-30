@@ -1,7 +1,7 @@
 import React from 'react'
 import { Navbar, Nav} from 'react-bootstrap'
 import '../css/navBarStyles.css'
-import KLlogo from '../images/Kimberly-Love-Logo-Zoomed.png'
+import KLlogo from '../images/Kimberly-Love-Logo-Color-Zoomed.png'
 
 function NavBar() {
   return (

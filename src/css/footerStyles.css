@@ -1,10 +1,11 @@
 footer {
-    border-top: 1px solid #ccc;
-    height: 75px;
+    background-color: #f2ebe9;
+    height: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     overflow: hidden;
+    color: #de5499;
 }
 
 footer p {
@@ -20,8 +21,15 @@ footer div:nth-of-type(2) {
 
 #footer-socials {
     display: flex;
-    gap: 10px;
+    gap: 12px;
 }
 .social-icons-footer {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    color: #de5499;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons-footer:hover {
+    transform: scale(1.3);
+    
 }

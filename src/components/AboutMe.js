@@ -1,4 +1,5 @@
 import React from 'react'
+import '../css/aboutMeStyles.css'
 
 function AboutMe() {
   return (

@@ -20,7 +20,7 @@ function NavBar() {
                 <Nav.Link eventKey="#projects" href="#projects">Projects</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link eventKey="#blog" href="#blog">Blog</Nav.Link>
+                <Nav.Link eventKey="#blogSection" href="#blogSection">Blog</Nav.Link>
             </Nav.Item>
             <Nav.Item>
                 <Nav.Link eventKey="#contact" href="#contact">Contact</Nav.Link>

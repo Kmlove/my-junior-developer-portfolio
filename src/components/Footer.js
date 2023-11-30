@@ -1,5 +1,6 @@
 import React from 'react'
 import "../css/footerStyles.css"
+import KLlogo from '../images/Kimberly-Love-Logo-Zoomed.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faMedium } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons"
@@ -8,7 +9,7 @@ function Footer() {
   return (
     <footer>
       <div>
-        <h3>KL</h3>
+        <img style={{height: "60px"}} src={KLlogo} alt='Kimberly Love Logo' />
       </div>
 
       <div>

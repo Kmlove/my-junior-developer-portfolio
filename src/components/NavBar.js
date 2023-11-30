@@ -1,11 +1,14 @@
 import React from 'react'
 import { Navbar, Nav} from 'react-bootstrap'
 import '../css/navBarStyles.css'
+import KLlogo from '../images/Kimberly-Love-Logo-Zoomed.png'
 
 function NavBar() {
   return (
     <Navbar >
-        <h3>KL</h3>
+        <div id="KLlogo">
+            <img src={KLlogo} alt='Kimberly Love Logo' />
+        </div>
         <Nav variant="underline" defaultActiveKey="#home">
             <Nav.Item>
                 <Nav.Link eventKey="#home" href="#home">Home</Nav.Link>

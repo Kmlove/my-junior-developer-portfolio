@@ -1,0 +1,26 @@
+footer {
+    border-top: 1px solid #ccc;
+    height: 75px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer div:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#footer-socials {
+    display: flex;
+    gap: 10px;
+}
+.social-icons-footer {
+    font-size: 1.3rem;
+}

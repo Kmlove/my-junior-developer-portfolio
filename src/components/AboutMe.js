@@ -3,7 +3,7 @@ import '../css/aboutMeStyles.scss'
 
 function AboutMe() {
   return (
-    <div id="aboutMe">
+    <div id="aboutMe" className='even'>
       <h2>About Me</h2>
       <p> I'm a recent graduate of Flatiron School's Software Engineering Bootcamp, marking the culmination of my immersive journey into the world of coding and problem-solving. Fueled by a passion for continuous learning, I thrive on turning challenges into opportunities. I believe in the power of technology to make a positive impact, and I'm excited ready to bring my skills to your next project!</p>
       <p>In my free time I enjoy cooking, playing soccer, biking and spending time with my friends and family.</p>

@@ -10,14 +10,27 @@ $subHeaderFontColor: #de5499;
 }
 
 #app {
-  background-color: $primaryBackgroundColor;
+  // background-color: $primaryBackgroundColor;
   color: #264143;
+
+}
+
+.odd {
+    background-color: $primaryBackgroundColor;
+    clip-path: polygon(0% 10%, 100% 0%, 100% 95%, 0% 100%);
+}
+
+
+
+.even {
+  background-color: #fff;
+
 }
 
 #main-container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 20px;
+  // padding: 20px;
 }
 
 h2 {

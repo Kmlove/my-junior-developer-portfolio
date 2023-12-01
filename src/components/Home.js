@@ -4,7 +4,7 @@ import kimHeadshot from '../images/Kim-Headshot.png'
 
 function Home() {
   return (
-    <div id="home" >
+    <div id="home" className='odd'>
       <div id="home-text-content">
         <p>Hi, I'm</p>
         <h1>Kim Love</h1>

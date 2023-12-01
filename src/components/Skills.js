@@ -16,7 +16,7 @@ import vscodeIcon from '../images/vscode.svg'
 
 function Skills() {
   return (
-    <div id="skills">
+    <div id="skills" className='odd' style={{paddingBottom: "15px"}}>
         <h2>Skills & Tools</h2>
         <div id="skills-icon-container">
             <div className='icon'>

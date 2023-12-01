@@ -53,7 +53,7 @@ function Blog() {
   })
 
   return (
-    <div id="blogSection">
+    <div id="blogSection" className='odd' style={{paddingBottom: "10px"}}>
       <h2>My Blog Posts</h2>
       <div id="blog-header">
         <img src={feed.image} alt="Kim's profile pic from Medium" />

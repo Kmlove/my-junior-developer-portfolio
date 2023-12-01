@@ -11,7 +11,7 @@ function NavBar() {
         <div id="KLlogo">
             <img src={KLlogo} alt='Kimberly Love Logo' />
         </div>
-        <Nav variant="underline" defaultActiveKey={location}>
+        <Nav variant="underline" >
             <Nav.Item>
                 <Nav.Link eventKey="#home" href="#home">Home</Nav.Link>
             </Nav.Item>

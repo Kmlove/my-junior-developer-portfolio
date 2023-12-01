@@ -16,7 +16,7 @@ import sqliteIcon from '../images/sqlite.svg'
 
 function Projects() {
   return (
-    <div id="projects">
+    <div id="projects" className='even'>
       <h2>Projects</h2>
       {/* <p>Skills grow. So will this portfolio.</p> */}
 

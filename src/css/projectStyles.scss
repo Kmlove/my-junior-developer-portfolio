@@ -1,6 +1,4 @@
-$darkTertiaryColor: #9c2d65;
-$subHeaderFontColor: #de5499;
-$primaryBackgroundColor: #eddcd9;
+@import './index';
 
 #projects {
     padding-top: 70px;
@@ -88,6 +86,7 @@ $primaryBackgroundColor: #eddcd9;
     margin-top: 0;
     margin-bottom: 5px;
 }
+
 .icon-p {
     padding-top: 10px;
     width: 40px;
@@ -97,7 +96,7 @@ $primaryBackgroundColor: #eddcd9;
 
 .disabled-link {
     /* pointer-events: none; /* Disable pointer events to prevent clicks */
-    color: gray !important; /* Optionally, change the color to indicate it's disabled */
+    color: #fff !important; /* Optionally, change the color to indicate it's disabled */
     text-decoration: none; /* Optionally, remove the underline */
 
 }
@@ -105,4 +104,5 @@ $primaryBackgroundColor: #eddcd9;
 .disabled-link:hover {
     cursor: not-allowed;
     background-color: $subHeaderFontColor !important;
+    border-color: $subHeaderFontColor !important;
 }

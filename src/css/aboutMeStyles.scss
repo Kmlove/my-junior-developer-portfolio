@@ -1,0 +1,25 @@
+@import './index';
+
+#aboutMe {
+    padding-top: 70px;
+    width: 80%;
+    margin: 0 auto;
+
+    a {
+        display: block;
+        border: 1px solid $subHeaderFontColor;
+        background-color: $subHeaderFontColor;
+        padding: 4px;
+        width: 100px;
+        text-decoration: none;
+        border-radius: 5px;
+        color: #fff;
+        text-align: center;
+    }
+
+    a:hover {
+        background-color: $primaryBackgroundColor;
+        color: $darkTertiaryColor;
+        border-color: $darkTertiaryColor;
+    }
+}

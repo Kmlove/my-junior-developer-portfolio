@@ -1,7 +1,7 @@
-$subHeaderFontColor: #de5499;
+@import './index';
 
 footer {
-    background-color: #f2ebe9;
+    background-color: $secondaryHeaderFooterColor;
     height: 100px;
     display: flex;
     justify-content: space-around;
@@ -33,5 +33,4 @@ footer div:nth-of-type(2) {
 
 .social-icons-footer:hover {
     transform: scale(1.3);
-    
 }

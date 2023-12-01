@@ -1,4 +1,6 @@
+$darkTertiaryColor: #9c2d65;
 $primaryBackgroundColor: #eddcd9;
+$secondaryHeaderFooterColor: #f2ebe9;
 $subHeaderFontColor: #de5499;
 
 * {
@@ -24,5 +26,5 @@ h2 {
   color: $subHeaderFontColor !important;
   border-bottom: 3px solid $subHeaderFontColor;
   width: fit-content;
-  margin: 20px auto !important;
+  margin: 20px auto 25px auto !important;
 }

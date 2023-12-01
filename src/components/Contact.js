@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import '../css/contactStyles.css'
+import '../css/contactStyles.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faMedium } from '@fortawesome/free-brands-svg-icons'
 

@@ -1,8 +1,7 @@
-$subHeaderFontColor: #de5499;
-$darkTertiaryColor: #9c2d65;
+@import './index';
 
 nav.navbar {
-    background-color: #f2ebe9;
+    background-color: $secondaryHeaderFooterColor;
     justify-content: space-between;
     position: fixed;
     top: 0;

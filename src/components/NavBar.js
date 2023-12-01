@@ -4,12 +4,14 @@ import '../css/navBarStyles.scss'
 import KLlogo from '../images/Kimberly-Love-Logo-Color-Zoomed.png'
 
 function NavBar() {
+    const location = window.location.hash;
+
   return (
     <Navbar >
         <div id="KLlogo">
             <img src={KLlogo} alt='Kimberly Love Logo' />
         </div>
-        <Nav variant="underline" defaultActiveKey="#home">
+        <Nav variant="underline" defaultActiveKey={location}>
             <Nav.Item>
                 <Nav.Link eventKey="#home" href="#home">Home</Nav.Link>
             </Nav.Item>

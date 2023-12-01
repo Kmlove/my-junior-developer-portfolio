@@ -18,7 +18,7 @@ function Projects() {
   return (
     <div id="projects">
       <h2>Projects</h2>
-      <p>Skills grow. So will this portfolio.</p>
+      {/* <p>Skills grow. So will this portfolio.</p> */}
 
       <div id="projects-container">
 
@@ -26,7 +26,7 @@ function Projects() {
           <div className='project-image'>
             <img src={GoodSportScreenshot} alt="GoodSport Screenshot"/>
           </div>
-          <div className='project-text'>
+          <div className='project-text right'>
             <h3>GoodSport</h3>
             <div id="project-description">
               {/* <p>JS-REACT-PYTHON-FLASK-FLASK SQLALCHEMY-SQLITE-ANTD</p> */}
@@ -36,7 +36,7 @@ function Projects() {
                 <img className="icon-p" src={javascriptIcon} alt='JavaScript Icon'/>
                 <img className="icon-p" src={reactIcon} alt='React Icon'/>
                 <img className="icon-p" src={pythonIcon} alt='Python Icon'/>
-                <img className="icon-p" src={flaskIcon} alt='Flask Icon' style={{width: "30px"}}/>
+                <img className="icon-p" src={flaskIcon} alt='Flask Icon' style={{width: "20px"}}/>
                 <img className="icon-p" src={sqliteIcon} alt='SQLite Icon'/>
             </div>
             <div id="links">
@@ -47,7 +47,7 @@ function Projects() {
         </div>{/*end tile1 div*/}
 
         <div id="tile2" className='project-tile'>
-          <div className='project-text' style={{alignItems: "end"}}>
+          <div className='project-text left' style={{alignItems: "end"}}>
             <h3>FitConnect</h3>
             <div id="project-description" style={{textAlign: "right"}}>
               {/* <p>JS-React-Python-Flask-Flask SQLAlchemy-SQLite</p> */}
@@ -57,7 +57,7 @@ function Projects() {
                 <img className="icon-p" src={javascriptIcon} alt='JavaScript Icon'/>
                 <img className="icon-p" src={reactIcon} alt='React Icon'/>
                 <img className="icon-p" src={pythonIcon} alt='Python Icon'/>
-                <img className="icon-p" src={flaskIcon} alt='Flask Icon' style={{width: "30px"}}/>
+                <img className="icon-p" src={flaskIcon} alt='Flask Icon' style={{width: "20px"}}/>
                 <img className="icon-p" src={sqliteIcon} alt='SQLite Icon'/>
             </div>
             <div id="links">
@@ -74,15 +74,15 @@ function Projects() {
           <div className='project-image'>
             <img src={FlatStopScreenShot} alt="GoodSport Screenshot"/>
           </div>
-          <div className='project-text'>
+          <div className='project-text right'>
             <h3>FlatStop</h3>
             <div id="project-description">
-              <p>Python-SQL-SQLite</p>
+              {/* <p>Python-SQL-SQLite</p> */}
               <p>A virtual game store that offers an immersive shopping experience where you can explore, curate and buy your favorite games and sell games with a bit of price negotiation, all through simple commands.</p>
             </div>
             <div className='made-with'>
                 <img className="icon-p" src={pythonIcon} alt='Python Icon'/>
-                <img style={{width: "30px"}} className="icon-p" src={sqlIcon} alt='SQL Icon'/>
+                <img style={{width: "20px"}} className="icon-p" src={sqlIcon} alt='SQL Icon'/>
                 <img className="icon-p" src={sqliteIcon} alt='SQLite Icon'/>
             </div>
             <div id="links">

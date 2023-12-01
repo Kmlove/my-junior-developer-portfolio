@@ -5,8 +5,9 @@ nav.navbar {
     justify-content: space-between;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 5;
     width: 100vw;
+    box-shadow: 5px 5px 10px 5px #ccc;
 }
 
 .navbar-nav {

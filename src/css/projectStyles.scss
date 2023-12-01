@@ -11,12 +11,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 20px;
+    row-gap: 25px;
 }
 
 .project-tile {
     width: 90%;
-    height: 400px;
+    height: fit-content;
     display: flex;
     gap: 15px;
 
@@ -25,28 +25,51 @@
     }
 }
 
+.right {
+    position: relative;
+    left: -80px;
+    top: 100px;
+}
+
+.left {
+    position: relative;
+    right: -80px;
+    top: 80px;
+}
+
 .project-image {
     width: 50%;
     overflow: hidden;
     display: flex;
     align-items: center;
+    height: 350px;
 
     img{
         width: 100%;
         height: 300px;
         object-fit: cover;
         object-position: center center;
-        border: 1px solid #ccc;
+        border: 1px solid $primaryBackgroundColor;
+        border-radius: 10px;
     }
 }
 
 .project-text {
+    background-color: $secondaryHeaderFooterColor;
+    height: fit-content;
     width: 45%;
+    padding: 12px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
     gap: 10px;
+    z-index: 1;
+
+    h3 {
+        color: $darkTertiaryColor;
+    }
 }
 
 #project-description p {
@@ -72,7 +95,7 @@
     }
 
     a:hover {
-        background-color: $primaryBackgroundColor;
+        background-color: $secondaryHeaderFooterColor;
         color: $darkTertiaryColor;
         border-color: $darkTertiaryColor;
     }
@@ -89,8 +112,8 @@
 
 .icon-p {
     padding-top: 10px;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 
 

@@ -1,3 +1,6 @@
+$primaryBackgroundColor: #eddcd9;
+$subHeaderFontColor: #de5499;
+
 * {
   box-sizing: border-box;
   font-size: 16px;
@@ -5,7 +8,7 @@
 }
 
 #app {
-  background-color: #eddcd9;
+  background-color: $primaryBackgroundColor;
   color: #264143;
 }
 
@@ -18,8 +21,8 @@
 h2 {
   text-transform: uppercase;
   font-weight: bold !important;
-  color: #de5499 !important;
-  border-bottom: 3px solid #de5499;
+  color: $subHeaderFontColor !important;
+  border-bottom: 3px solid $subHeaderFontColor;
   width: fit-content;
   margin: 20px auto !important;
 }

@@ -1,6 +1,11 @@
+$darkTertiaryColor: #9c2d65;
+$subHeaderFontColor: #de5499;
+$primaryBackgroundColor: #eddcd9;
+
 #projects {
     padding-top: 70px;
 }
+
 #projects-container {
     width: 90%;
     margin: 0 auto;
@@ -16,10 +21,10 @@
     height: 400px;
     display: flex;
     gap: 15px;
-}
 
-.project-tile h3 {
-    margin-bottom: 0;
+    h3 {
+        margin-bottom: 0;
+    }
 }
 
 .project-image {
@@ -27,14 +32,14 @@
     overflow: hidden;
     display: flex;
     align-items: center;
-}
 
-.project-image img{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    object-position: center center;
-    border: 1px solid #ccc;
+    img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        object-position: center center;
+        border: 1px solid #ccc;
+    }
 }
 
 .project-text {
@@ -51,21 +56,28 @@
     margin-bottom: 0;
 }
 
-#links a {
-    display: block;
-    border: 1px solid black;
-    padding: 4px;
-    width: 100px;
-    text-decoration: none;
-    border-radius: 5px;
-    color: black;
-    text-align: center;
-}
-
 #links {
     display: flex;
     justify-content: center;
     gap: 30px;
+
+    a {
+        display: block;
+        border: 1px solid $subHeaderFontColor;
+        background-color: $subHeaderFontColor;
+        padding: 4px;
+        width: 100px;
+        text-decoration: none;
+        border-radius: 5px;
+        color: #fff;
+        text-align: center;
+    }
+
+    a:hover {
+        background-color: $primaryBackgroundColor;
+        color: $darkTertiaryColor;
+        border-color: $darkTertiaryColor;
+    }
 }
 
 .made-with {
@@ -87,8 +99,10 @@
     /* pointer-events: none; /* Disable pointer events to prevent clicks */
     color: gray !important; /* Optionally, change the color to indicate it's disabled */
     text-decoration: none; /* Optionally, remove the underline */
+
 }
 
 .disabled-link:hover {
     cursor: not-allowed;
+    background-color: $subHeaderFontColor !important;
 }

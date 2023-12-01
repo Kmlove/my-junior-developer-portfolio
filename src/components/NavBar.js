@@ -1,6 +1,6 @@
 import React from 'react'
 import { Navbar, Nav} from 'react-bootstrap'
-import '../css/navBarStyles.css'
+import '../css/navBarStyles.scss'
 import KLlogo from '../images/Kimberly-Love-Logo-Color-Zoomed.png'
 
 function NavBar() {

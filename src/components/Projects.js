@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/projectStyles.css'
+import '../css/projectStyles.scss'
 import GoodSportScreenshot from '../images/GoodSport-Screenshot.png'
 import FitConnectScreenshot from '../images/FitConnect-Screenshot.png'
 import FlatStopScreenShot from '../images/FlatStop-Screenshot.png'

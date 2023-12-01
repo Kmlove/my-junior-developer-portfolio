@@ -1,5 +1,5 @@
 import React from 'react'
-import "../css/footerStyles.css"
+import "../css/footerStyles.scss"
 import KLlogo from '../images/Kimberly-Love-Logo-Color-Zoomed.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faMedium } from '@fortawesome/free-brands-svg-icons'

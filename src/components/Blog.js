@@ -53,19 +53,21 @@ function Blog() {
   })
 
   return (
-    <div id="blogSection" className='odd' style={{paddingBottom: "10px"}}>
-      <h2>My Blog Posts</h2>
-      <div id="blog-header">
-        <img src={feed.image} alt="Kim's profile pic from Medium" />
-        <h4>Kimberly Love</h4>
-        <p>Check out my latest 3 blogs below! If you are interested in seeing a complete list of all my blogs, you go to my Medium page here  
-          <span id="blog-medium"><a href={feed.link}target='_blank' rel="noreferrer">
-          <FontAwesomeIcon icon={faMedium} size="xl" title="Go to Kim's blog on Medium"/>
-          </a></span>
-        </p>
-      </div>
-      <div id="blogs-container">
-        {blogsToDisplay}
+    <div className='odd'>
+      <div id="blogSection" className='contain' style={{paddingBottom: "20px"}}>
+        <h2>My Blog Posts</h2>
+        <div id="blog-header">
+          <img src={feed.image} alt="Kim's profile pic from Medium" />
+          <h4>Kimberly Love</h4>
+          <p>Check out my latest 3 blogs below! If you are interested in seeing a complete list of all my blogs, you go to my Medium page here  
+            <span id="blog-medium"><a href={feed.link}target='_blank' rel="noreferrer">
+            <FontAwesomeIcon icon={faMedium} size="xl" title="Go to Kim's blog on Medium"/>
+            </a></span>
+          </p>
+        </div>
+        <div id="blogs-container">
+          {blogsToDisplay}
+        </div>
       </div>
     </div>
   )

@@ -16,60 +16,62 @@ import vscodeIcon from '../images/vscode.svg'
 
 function Skills() {
   return (
-    <div id="skills" className='odd' style={{paddingBottom: "15px"}}>
-        <h2>Skills & Tools</h2>
-        <div id="skills-icon-container">
-            <div className='icon'>
-                <img src={htmlIcon} alt='HTML Icon'/>
-                <p>HTML 5</p>
-            </div>
-            <div className='icon'>
-                <img src={cssIcon} alt='CSS Icon'/>
-                <p>CSS 3</p>
-            </div>
-            <div className='icon'>
-                <img src={javascriptIcon} alt='JavaScript Icon'/>
-                <p>JavaScript</p>
-            </div>
-            <div className='icon'>
-                <img src={reactIcon} alt='React Icon'/>
-                <p>React</p>
-            </div>
-            <div className='icon'>
-                <img src={pythonIcon} alt='Python Icon'/>
-                <p>Python</p>
-            </div>
-            <div className='icon'>
-                <img src={flaskIcon} alt='Flask Icon'/>
-                <p>Flask</p>
-            </div>
-            <div className='icon'>
-                <img src={sqlIcon} alt='SQL Icon'/>
-                <p>SQL</p>
-            </div>
-            <div className='icon'>
-                <img src={sqliteIcon} alt='SQLite Icon'/>
-                <p>SQLite</p>
-            </div>
-            <div className='icon'>
-                <img src={githubIcon} alt='GitHub Icon'/>
-                <p>GitHub</p>
-            </div>
-            <div className='icon'>
-                <img src={gitIcon} alt='Git Icon'/>
-                <p>Git</p>
-            </div>
-            <div className='icon'>
-                <img src={vscodeIcon} alt='VS Code Icon'/>
-                <p>VS Code</p>
-            </div>
-            <div className='icon'>
-                <img src={commandLineIcon} alt='Command Line Icon' />
-                <p>Command Line</p>
-            </div>
-            <div className='icon' >
-                <img style={{height: "150px"}} src={restfulApiIcon} alt='RESTful Icon'/>
-                <p>RESTful APIs</p>
+    <div className='odd'>
+        <div id="skills" className='contain' style={{paddingBottom: "15px"}}>
+            <h2>Skills & Tools</h2>
+            <div id="skills-icon-container">
+                <div className='icon'>
+                    <img src={htmlIcon} alt='HTML Icon'/>
+                    <p>HTML 5</p>
+                </div>
+                <div className='icon'>
+                    <img src={cssIcon} alt='CSS Icon'/>
+                    <p>CSS 3</p>
+                </div>
+                <div className='icon'>
+                    <img src={javascriptIcon} alt='JavaScript Icon'/>
+                    <p>JavaScript</p>
+                </div>
+                <div className='icon'>
+                    <img src={reactIcon} alt='React Icon'/>
+                    <p>React</p>
+                </div>
+                <div className='icon'>
+                    <img src={pythonIcon} alt='Python Icon'/>
+                    <p>Python</p>
+                </div>
+                <div className='icon'>
+                    <img src={flaskIcon} alt='Flask Icon'/>
+                    <p>Flask</p>
+                </div>
+                <div className='icon'>
+                    <img src={sqlIcon} alt='SQL Icon'/>
+                    <p>SQL</p>
+                </div>
+                <div className='icon'>
+                    <img src={sqliteIcon} alt='SQLite Icon'/>
+                    <p>SQLite</p>
+                </div>
+                <div className='icon'>
+                    <img src={githubIcon} alt='GitHub Icon'/>
+                    <p>GitHub</p>
+                </div>
+                <div className='icon'>
+                    <img src={gitIcon} alt='Git Icon'/>
+                    <p>Git</p>
+                </div>
+                <div className='icon'>
+                    <img src={vscodeIcon} alt='VS Code Icon'/>
+                    <p>VS Code</p>
+                </div>
+                <div className='icon'>
+                    <img src={commandLineIcon} alt='Command Line Icon' />
+                    <p>Command Line</p>
+                </div>
+                <div className='icon' >
+                    <img style={{height: "150px"}} src={restfulApiIcon} alt='RESTful Icon'/>
+                    <p>RESTful APIs</p>
+                </div>
             </div>
         </div>
     </div>

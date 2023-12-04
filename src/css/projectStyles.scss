@@ -131,3 +131,47 @@
     background-color: $subHeaderFontColor !important;
     border-color: $subHeaderFontColor !important;
 }
+
+@media screen and (max-width: 1140px){
+    .project-tile {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1070px){
+    .project-tile {
+        width: 90%;
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+        margin: -20px;
+    }
+
+    #tile2 {
+        flex-direction: column-reverse;
+    }
+
+    .right {
+        left: 0px;
+        top: -70px;
+    }
+    
+    .left {
+        right: 0px;
+        top: -70px;
+    }
+
+    .project-image {
+        width: 70%;
+    }
+
+    .project-text {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    #project-description p {
+        font-size: 1rem;
+    }
+
+}

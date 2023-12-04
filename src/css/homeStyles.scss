@@ -49,7 +49,7 @@
   
 #home-text-content p {
     color: $subHeaderFontColor;
-    font-size: 2em;
+    font-size: 2rem;
     font-style: italic;
     animation: fadeIn 1s ease-in;
 }
@@ -76,4 +76,33 @@
 
 #home-headshot-container img {
     height: 550px;
+}
+
+@media screen and (max-width: 1200px){
+
+  #home-text-content h1 {
+      font-size: 8rem;
+  }
+
+  #home-text-content p {
+    font-size: 1.5rem;
+  }
+
+  #home-headshot-container {
+    height: 280px;
+    width: 280px;
+  }
+
+  #home-headshot-container img {
+      height: 450px;
+  }
+}
+
+@media screen and (max-width: 1000px){
+
+  #home{
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
+  }
 }

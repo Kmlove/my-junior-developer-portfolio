@@ -88,12 +88,12 @@ button[type="submit"] {
     color: #fff;
     text-align: center;
 
-}
+    &:hover {
+        background-color: #fff;
+        color: $darkTertiaryColor;
+        border-color: $darkTertiaryColor;
+    }
 
-button[type="submit"]:hover {
-    background-color: $primaryBackgroundColor;
-    color: $darkTertiaryColor;
-    border-color: $darkTertiaryColor;
 }
 
 #socials {

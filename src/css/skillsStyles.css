@@ -37,3 +37,33 @@
 .icon:hover{
     transform: scale(1.2);
 }
+
+@media screen and (max-width: 800px){
+    .icon {
+        width: 70px;
+        height: 90px;
+    }
+    
+    .icon img {
+        height: 50px;
+    }
+    
+    .icon p {
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width: 460px){
+    .icon {
+        width: 60px;
+        height: 80px;
+    }
+    
+    .icon img {
+        height: 40px;
+    }
+    
+    .icon p {
+        font-size: .6rem;
+    }
+}

@@ -92,3 +92,14 @@
     font-weight: bold;
     color: $darkTertiaryColor
 }
+
+@media screen and (max-width: 805px) {
+    #blog-image {
+        height: 120px;
+    
+        img {
+            width: 120px;
+            height: auto;
+        }
+    }
+}

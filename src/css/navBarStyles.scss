@@ -10,6 +10,7 @@ nav.navbar {
     box-shadow: 5px 5px 10px 5px #ccc;
 }
 
+// Large Navbar Styles
 .navbar-nav {
     margin-right: 150px;
 }
@@ -27,10 +28,63 @@ nav.navbar {
     color: $darkTertiaryColor !important;
 }
 
+// Small NavBar Styles
 #KLlogo {
     margin-left: 50px;
 }
 
 #KLlogo img {
     width: 75px;
+}
+
+.navbar-toggler {
+    margin-right: 50px;
+    color: $subHeaderFontColor;
+
+    &:focus {
+        border-color: yellow;
+    }
+}
+
+.navbar-toggler-icon {
+   color: $subHeaderFontColor;
+}
+
+.navbar-nav a {
+    font-size: 1.2rem;
+    color: $subHeaderFontColor;
+}
+
+.navbar-nav a:hover{
+    color: $darkTertiaryColor !important;
+    text-decoration: underline;
+}
+
+.navbar-nav a.active{
+    color: $darkTertiaryColor !important;
+    text-decoration: underline;
+}
+
+
+//Media Queries
+@media screen and (max-width: 850px) {
+    .navbar-nav {
+        margin-right: 90px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .navbar-nav {
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .nav-item a {
+        font-size: 1rem;
+    }
+
+    #KLlogo img {
+        width: 65px;
+    }
 }

@@ -175,3 +175,46 @@
     }
 
 }
+
+@media screen and (max-width: 900px){
+    .project-tile {
+        width: 90%;
+        margin: -30px;
+    }
+
+    .project-image {
+        width: 80%;
+    }
+
+    .project-text {
+        width: 65%;
+    }
+
+    #project-description p {
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .project-image {
+        width: 90%;
+    }
+
+    .project-text {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .project-image {
+        width: 100%;
+    }
+
+    .project-text {
+        width: 85%;
+    }
+
+    #project-description p {
+        font-size: .8rem;
+    }
+}

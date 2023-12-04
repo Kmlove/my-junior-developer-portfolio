@@ -106,3 +106,28 @@
     gap: 100px;
   }
 }
+
+@media screen and (max-width: 600px){
+
+  #home{
+    gap: 80px;
+  }
+
+  #home-text-content h1 {
+    font-size: 5rem;
+  }
+
+  #home-text-content p {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+
+  #home-headshot-container {
+    height: 230px;
+    width: 230px;
+  }
+
+  #home-headshot-container img {
+      height: 400px;
+  }
+}

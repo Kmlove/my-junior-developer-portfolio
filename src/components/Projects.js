@@ -1,18 +1,17 @@
 import React from 'react'
 import '../css/projectStyles.scss'
+import GoodSportScreenshot2 from '../images/GoodSportScreenshot2.png'
+import FitConnectScreenshot2 from '../images/FitConnectScreenshot2.png'
 import GoodSportScreenshot from '../images/GoodSport-Screenshot.png'
 import FitConnectScreenshot from '../images/FitConnect-Screenshot.png'
 import FlatStopScreenShot from '../images/FlatStop-Screenshot.png'
 import javascriptIcon from '../images/javascript.svg'
-import cssIcon from '../images/css.svg'
-import htmlIcon from '../images/html.svg'
 import reactIcon from '../images/react.svg'
 import pythonIcon from '../images/python.svg'
 import flaskIcon from '../images/flask.svg'
-import gitIcon from '../images/git.svg'
-import githubIcon from '../images/github.svg'
 import sqlIcon from '../images/sql.svg'
 import sqliteIcon from '../images/sqlite.svg'
+
 
 function Projects() {
   return (
@@ -25,7 +24,7 @@ function Projects() {
 
           <div id="tile1" className='project-tile'>
             <div className='project-image'>
-              <img src={GoodSportScreenshot} alt="GoodSport Screenshot"/>
+              <img src={GoodSportScreenshot2} style={{objectFit: "fit"}} alt="GoodSport Screenshot"/>
             </div>
             <div className='project-text right'>
               <h3>GoodSport</h3>
@@ -67,13 +66,13 @@ function Projects() {
               </div>
             </div>
             <div className='project-image'>
-              <img src={FitConnectScreenshot} alt="FitConnect Screenshot"/>
+              <img src={FitConnectScreenshot2} style={{objectFit: "fit"}} alt="FitConnect Screenshot"/>
             </div>
           </div>
 
           <div id="tile3" className='project-tile'>
             <div className='project-image'>
-              <img src={FlatStopScreenShot} alt="GoodSport Screenshot"/>
+              <img src={FlatStopScreenShot} style={{objectFit: "fit"}} alt="GoodSport Screenshot"/>
             </div>
             <div className='project-text right'>
               <h3>FlatStop</h3>

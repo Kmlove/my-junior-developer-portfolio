@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/skillsStyles.css'
+import '../css/skillsStyles.scss'
 import javascriptIcon from '../images/javascript.svg'
 import cssIcon from '../images/css.svg'
 import htmlIcon from '../images/html.svg'
@@ -13,6 +13,8 @@ import sqliteIcon from '../images/sqlite.svg'
 import commandLineIcon from "../images/command-line.svg"
 import restfulApiIcon from '../images/restul-api.svg'
 import vscodeIcon from '../images/vscode.svg'
+import responsiveIcon from '../images/responsive-design.svg'
+import sassIcon from '../images/sass.svg'
 
 function Skills() {
   return (
@@ -71,6 +73,14 @@ function Skills() {
                 <div className='icon' >
                     <img style={{height: "150px"}} src={restfulApiIcon} alt='RESTful Icon'/>
                     <p>RESTful APIs</p>
+                </div>
+                <div className='icon' >
+                    <img src={responsiveIcon} alt='Responsive Design Icon'/>
+                    <p>Responsive Design</p>
+                </div>
+                <div className='icon' >
+                    <img style={{height: "50px"}} src={sassIcon} alt='Sass Icon'/>
+                    <p>Sass</p>
                 </div>
             </div>
         </div>

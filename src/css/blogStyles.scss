@@ -103,3 +103,50 @@
         }
     }
 }
+
+@media screen and (max-width: 805px) {
+    #blog-header p {
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #blog-image {
+        display: none;
+    }
+
+    .blog {
+        flex-direction: column-reverse;
+        width: 90%;
+        padding-bottom: 10px;
+
+        a {
+            width: 80px;
+            font-size: .8rem;
+        }
+    }
+    
+    #blog-text p:not(:nth-child(2)) {
+        font-size: 1rem;
+    }
+    
+    #blog-title {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    #blog-header p {
+        font-size: .8rem;
+    }
+
+    
+    #blog-text p:not(:nth-child(2)) {
+        font-size: .8rem;
+    }
+    
+    #blog-title {
+        font-size: 1rem;
+    }
+}

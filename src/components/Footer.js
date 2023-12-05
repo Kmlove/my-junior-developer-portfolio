@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import "../css/footerStyles.scss"
 import KLlogo from '../images/Kimberly-Love-Logo-Color-Zoomed.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -6,10 +6,33 @@ import { faLinkedin, faGithub, faMedium } from '@fortawesome/free-brands-svg-ico
 import { faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons"
 
 function Footer() {
+  const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setViewportWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  let imgHeight 
+  if(viewportWidth <= 380){
+    imgHeight = {height: "50px"}
+  } else if (viewportWidth <= 440){
+    imgHeight = {height: "55px"}
+  } else {
+    imgHeight = {height: "60px"}
+  }
+
   return (
     <footer>
       <div>
-        <img style={{height: "60px"}} src={KLlogo} alt='Kimberly Love Logo' />
+        <img style={imgHeight} src={KLlogo} alt='Kimberly Love Logo' />
       </div>
 
       <div>

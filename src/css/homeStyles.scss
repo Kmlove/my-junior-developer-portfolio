@@ -80,37 +80,81 @@
 
 @media screen and (max-width: 1200px){
 
+  #home{
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  #home-text-content h1 {
+    font-size: 9rem;
+}
+
+  #home-text-content p {
+    font-size: 1.6rem;
+  }
+
+  #home-headshot-container {
+    height: 300px;
+    width: 300px;
+  }
+
+  #home-headshot-container img {
+      height: 500px;
+  }
+
+}
+
+@media screen and (max-width: 800px){
+  
   #home-text-content h1 {
       font-size: 8rem;
   }
-
+  
   #home-text-content p {
     font-size: 1.5rem;
   }
-
+  
   #home-headshot-container {
     height: 280px;
     width: 280px;
   }
-
+  
   #home-headshot-container img {
       height: 450px;
   }
-}
 
-@media screen and (max-width: 1000px){
-
-  #home{
-    flex-direction: column;
-    justify-content: center;
-    gap: 100px;
-  }
 }
 
 @media screen and (max-width: 600px){
 
   #home{
-    gap: 80px;
+    gap: 40px;
+  }
+
+  #home-text-content h1 {
+    font-size: 6.5rem;
+  }
+
+  #home-text-content p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+
+  #home-headshot-container {
+    height: 250px;
+    width: 250px;
+  }
+
+  #home-headshot-container img {
+      height: 420px;
+  }
+}
+
+@media screen and (max-width: 480px){
+
+  #home{
+    gap: 30px;
   }
 
   #home-text-content h1 {
@@ -129,5 +173,90 @@
 
   #home-headshot-container img {
       height: 400px;
+  }
+}
+
+@media screen and (max-width: 350px){
+
+  #home{
+    gap: 20px;
+  }
+
+  #home-text-content h1 {
+    font-size: 4rem;
+  }
+
+  #home-text-content p {
+    font-size: .8rem;
+    margin-bottom: 0;
+  }
+
+  #home-headshot-container {
+    height: 200px;
+    width: 200px;
+  }
+
+  #home-headshot-container img {
+      height: 350px;
+  }
+}
+
+@media screen and (max-height: 800px){
+  #home-text-content h1 {
+    font-size: 7rem;
+  }
+
+  #home-text-content p {
+    font-size: 1.5rem;
+
+  }
+
+  #home-headshot-container {
+    height: 300px;
+    width: 300px;
+  }
+
+  #home-headshot-container img {
+      height: 450px;
+  }
+}
+
+@media screen and (max-height: 760px){
+  #home-text-content h1 {
+    font-size: 6rem;
+  }
+
+  #home-text-content p {
+    font-size: 1.2rem;
+
+  }
+
+  #home-headshot-container {
+    height: 250px;
+    width: 250px;
+  }
+
+  #home-headshot-container img {
+      height: 370px;
+  }
+}
+
+@media screen and (max-height: 680px){
+  #home-text-content h1 {
+    font-size: 5rem;
+  }
+
+  #home-text-content p {
+    font-size: 1rem;
+
+  }
+
+  #home-headshot-container {
+    height: 200px;
+    width: 200px;
+  }
+
+  #home-headshot-container img {
+      height: 350px;
   }
 }

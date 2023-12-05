@@ -10,7 +10,7 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 12px;
-    width: fit-content;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -23,19 +23,20 @@
     justify-content: center;
     align-items: center;
     transition: transform 0.3s ease-in-out;
-}
+    
+    img {
+        height: 60px;
+    }
+    
+    p {
+        font-size: .8rem;
+        margin-top: 5px;
+        text-align: center;
+    }
 
-.icon img {
-    height: 60px;
-}
-
-.icon p {
-    font-size: .8rem;
-    margin-top: 5px;
-}
-
-.icon:hover{
-    transform: scale(1.2);
+    &:hover {
+        transform: scale(1.2);
+    }
 }
 
 @media screen and (max-width: 800px){
@@ -54,6 +55,10 @@
 }
 
 @media screen and (max-width: 460px){
+    #skills-icon-container {
+        width: fit-content;
+    }
+
     .icon {
         width: 60px;
         height: 80px;
@@ -65,5 +70,20 @@
     
     .icon p {
         font-size: .6rem;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .icon {
+        width: 55px;
+        height: 75px;
+    }
+    
+    .icon img {
+        height: 35px;
+    }
+    
+    .icon p {
+        font-size: .5rem;
     }
 }

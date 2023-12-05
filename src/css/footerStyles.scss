@@ -34,3 +34,32 @@ footer div:nth-of-type(2) {
 .social-icons-footer:hover {
     transform: scale(1.3);
 }
+
+@media screen and (max-width: 440px){
+    footer {
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+
+    #footer-socials {
+        flex-wrap: wrap;
+        width: 100px;
+        justify-content: center;
+    }
+
+    .social-icons-footer {
+        font-size: 1.2rem;
+    }
+
+    footer img {
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 380px){
+
+    .social-icons-footer {
+        font-size: 1rem;
+    }
+
+}

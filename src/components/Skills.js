@@ -79,7 +79,7 @@ function Skills() {
                     <p>Responsive Design</p>
                 </div>
                 <div className='icon' >
-                    <img style={{height: "50px"}} src={sassIcon} alt='Sass Icon'/>
+                    <img style={{height: "60px"}} src={sassIcon} alt='Sass Icon'/>
                     <p>Sass</p>
                 </div>
             </div>

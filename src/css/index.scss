@@ -1,0 +1,47 @@
+$darkTertiaryColor: #9c2d65;
+$primaryBackgroundColor: #eddcd9;
+$secondaryHeaderFooterColor: #f2ebe9;
+$subHeaderFontColor: #de5499;
+
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#app {
+  color: #264143;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+#main-container {
+  width: 100vw;
+}
+
+.contain {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.odd {
+    background-color: $primaryBackgroundColor;
+    clip-path: polygon(0% 10%, 100% 0%, 100% 95%, 0% 100%);
+}
+
+.even {
+  background-color: #fff;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: bold !important;
+  color: $subHeaderFontColor !important;
+  border-bottom: 3px solid $subHeaderFontColor;
+  width: fit-content;
+  margin: 20px auto 25px auto !important;
+}

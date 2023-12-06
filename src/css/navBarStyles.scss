@@ -1,0 +1,89 @@
+@import './index';
+
+nav.navbar {
+    background-color: $secondaryHeaderFooterColor;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    width: 100vw;
+    box-shadow: 5px 5px 10px 5px #ccc;
+}
+
+// Large Navbar Styles
+.navbar-nav {
+    margin-right: 150px;
+}
+
+.nav-item a {
+    font-size: 1.2rem;
+    color: $subHeaderFontColor;
+}
+
+.nav-item a:hover{
+    color: $darkTertiaryColor !important;
+    text-decoration: none !important;
+}
+
+.nav-item a.active{
+    color: $darkTertiaryColor !important;
+    text-decoration: none !important;
+}
+
+// Small NavBar Styles
+#KLlogo {
+    margin-left: 50px;
+}
+
+#KLlogo img {
+    width: 75px;
+}
+
+.navbar-toggler {
+    margin-right: 50px;
+    color: $subHeaderFontColor;
+}
+
+.navbar-toggler-icon {
+   color: $subHeaderFontColor;
+}
+
+.navbar-nav a {
+    font-size: 1.2rem;
+    color: $subHeaderFontColor;
+}
+
+.navbar-nav a:hover{
+    color: $darkTertiaryColor !important;
+    text-decoration: underline;
+}
+
+.navbar-nav a.active{
+    color: $darkTertiaryColor !important;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+//Media Queries
+@media screen and (max-width: 850px) {
+    .navbar-nav {
+        margin-right: 90px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .navbar-nav {
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .nav-item a {
+        font-size: 1rem;
+    }
+
+    #KLlogo img {
+        width: 65px;
+    }
+}

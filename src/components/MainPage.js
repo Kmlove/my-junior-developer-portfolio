@@ -19,8 +19,8 @@ function MainPage() {
         <Projects />
         <Blog />
         <Contact />
-        <Footer />
       </div>
+      <Footer />
     </>
   )
 }

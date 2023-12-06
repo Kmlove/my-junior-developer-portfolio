@@ -1,33 +1,31 @@
-import React from 'react'
-import { Navbar, Nav} from 'react-bootstrap'
-import '../css/navBarStyles.css'
+import React, { useState, useEffect } from 'react'
+import { Navbar, Nav, NavDropdown} from 'react-bootstrap'
+import '../css/navBarStyles.scss'
+import KLlogo from '../images/Kimberly-Love-Logo-Color-Zoomed.png'
+import LargeNavbar from './LargeNavbar'
+import SmallNavBar from './SmallNavBar'
 
 function NavBar() {
-  return (
-    <Navbar >
-        <h3>KL</h3>
-        <Nav variant="underline" defaultActiveKey="#home">
-            <Nav.Item>
-                <Nav.Link eventKey="#home" href="#home">Home</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-                <Nav.Link eventKey="#aboutMe" href="#aboutMe">About Me</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-                <Nav.Link eventKey="#skills" href="#skills">Skills</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-                <Nav.Link eventKey="#projects" href="#projects">Projects</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-                <Nav.Link eventKey="#blog" href="#blog">Blog</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-                <Nav.Link eventKey="#contact" href="#contact">Contact</Nav.Link>
-            </Nav.Item>
-        </Nav>
-    </Navbar>
-  )
+    const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+      const handleResize = () => {
+        setViewportWidth(window.innerWidth);
+      };
+  
+      window.addEventListener('resize', handleResize);
+  
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
+
+    return (
+        <>
+            {viewportWidth > 630 ? <LargeNavbar /> : <SmallNavBar />}
+            {/* Your other components */}
+        </>
+    )
 }
 
 export default NavBar

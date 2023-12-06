@@ -2,19 +2,59 @@ import React, { useState } from 'react'
 import '../css/contactStyles.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faMedium } from '@fortawesome/free-brands-svg-icons'
+import { toast } from 'react-toastify'
 
 
 function Contact() {
-  const initalValue = {
+  const initialValue = {
     firstName: "",
     lastName: "",
     email: "",
     message: ""
   }
-  const [ contactFormData, setContactFormData ] = useState(initalValue)
+  const [ contactFormData, setContactFormData ] = useState(initialValue)
 
-  function handleSubmit(e){
+  const successToast=()=> {
+    toast.success("Message Sent Successfully", {
+      position: toast.POSITION.BOTTOM_CENTER
+    });
+  }
+
+  const errorToast=()=>{
+    toast.error("Error Sending Message: Please try again later!", {
+      position: toast.POSITION.BOTTOM_CENTER,
+    });
+  }
+
+  async function handleSubmit(e){
     e.preventDefault()
+
+    // Formspree endpoint for my account
+    const formSpreeEndpoint = "https://formspree.io/f/xyyqrzky";
+
+    try {
+      const response = await fetch(formSpreeEndpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(contactFormData),
+      });
+
+      if (response.ok) {
+        // Handle success, show a success message
+        setContactFormData(initialValue)
+        successToast()
+      } else {
+        // Handle error, show an error message
+        console.error('Form submission failed');
+        errorToast()
+      }
+    } 
+    catch (error) {
+      console.error('Error:', error);
+      errorToast()
+    }
   }
 
   function handleChange(e){

@@ -23,10 +23,10 @@ footer div:nth-of-type(2) {
 
 #footer-socials {
     display: flex;
-    gap: 12px;
+    gap: 15px;
 }
 .social-icons-footer {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: $subHeaderFontColor;
     transition: transform 0.3s ease-in-out;
 }
@@ -35,7 +35,22 @@ footer div:nth-of-type(2) {
     transform: scale(1.3);
 }
 
+@media screen and (max-width: 800px){
+    #footer-socials {
+        gap: 13px;
+    }
+
+    .social-icons-footer {
+        font-size: 1.4rem;
+    }
+}
+
+
 @media screen and (max-width: 440px){
+    #footer-socials {
+        gap: 10px;
+    }
+
     footer {
         padding-right: 8px;
         padding-left: 8px;

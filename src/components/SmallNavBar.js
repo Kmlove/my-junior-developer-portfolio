@@ -1,11 +1,9 @@
 import React, { useState } from 'react'
 import { Navbar, Nav} from 'react-bootstrap'
 import '../css/navBarStyles.scss'
-import KLlogo from '../images/Kimberly-Love-Logo-Color-Zoomed.png'
 
-function SmallNavBar() {
+function SmallNavBar({KLlogo}) {
     
-    const location = window.location.hash;
     const [expanded, setExpanded] = useState(false);
 
     const handleNavbarToggle = () => {

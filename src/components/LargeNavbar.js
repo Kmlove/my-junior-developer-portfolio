@@ -1,10 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Navbar, Nav} from 'react-bootstrap'
 import '../css/navBarStyles.scss'
-import KLlogo from '../images/Kimberly-Love-Logo-Color-Zoomed.png'
 
-function LargeNavbar() {
-    const location = window.location.hash;
+function LargeNavbar({KLlogo}) {
 
     return (
         <Navbar id="large-nav">

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import { Navbar, Nav, NavDropdown} from 'react-bootstrap'
 import '../css/navBarStyles.scss'
 import KLlogo from '../images/Kimberly-Love-Logo-Color-Zoomed.png'
 import LargeNavbar from './LargeNavbar'
@@ -22,8 +21,7 @@ function NavBar() {
 
     return (
         <>
-            {viewportWidth > 630 ? <LargeNavbar /> : <SmallNavBar />}
-            {/* Your other components */}
+            {viewportWidth > 630 ? <LargeNavbar KLlogo={KLlogo}/> : <SmallNavBar KLlogo={KLlogo} />}
         </>
     )
 }

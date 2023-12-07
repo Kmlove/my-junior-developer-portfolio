@@ -46,7 +46,7 @@ function Blog() {
           <a href={blog.link} target='_blank' rel="noreferrer">Read more...</a>
         </div>
         <div id="blog-image">
-          <img src={blog.thumbnail}/>
+          <img src={blog.thumbnail} alit={`Thumbnail img for ${blog.title} blog`}/>
         </div>
       </div>
     )

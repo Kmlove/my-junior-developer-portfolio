@@ -30,7 +30,7 @@ function Projects() {
               <h3>GoodSport</h3>
               <div id="project-description">
                 {/* <p>JS-REACT-PYTHON-FLASK-FLASK SQLALCHEMY-SQLITE-ANTD</p> */}
-                <p>GoodSport is a sports team schedule management app that will allow users to be added to a team, and view all events that are associated with their team. Coaches can add, update and delete events for their teams.</p>
+                <p>GoodSport is a sports team schedule management app that will allow users/players to be added to a team and view all events associated with their team, while coaches can add, update and delete events for their teams</p>
               </div>
               <div className='made-with'>
                   <img className="icon-p" src={javascriptIcon} alt='JavaScript Icon'/>
@@ -51,7 +51,7 @@ function Projects() {
               <h3>FitConnect</h3>
               <div id="project-description" style={{textAlign: "right"}}>
                 {/* <p>JS-React-Python-Flask-Flask SQLAlchemy-SQLite</p> */}
-                <p>FitConnect seamlessly blends fitness logging with a social media twist, allowing users to share workout insights and post reflections on stored routines, and create new shareable workouts for others to engage with and provide feedback on.</p>
+                <p>FitConnect seamlessly blends fitness logging with a social media twist, where users can share workout insights, post reflections on stored workout routines, and create new shareable workouts for others to engage with and provide feedback on.</p>
               </div>
               <div className='made-with'>
                   <img className="icon-p" src={javascriptIcon} alt='JavaScript Icon'/>
@@ -78,7 +78,7 @@ function Projects() {
               <h3>FlatStop</h3>
               <div id="project-description">
                 {/* <p>Python-SQL-SQLite</p> */}
-                <p>A virtual game store that offers an immersive shopping experience where you can explore, curate and buy your favorite games and sell games with a bit of price negotiation, all through simple commands.</p>
+                <p>A virtual game store that offers an immersive shopping experience where users can explore, curate and buy their favorite games and sell games with a bit of price negotiation, all through simple commands.</p>
               </div>
               <div className='made-with'>
                   <img className="icon-p" src={pythonIcon} alt='Python Icon'/>

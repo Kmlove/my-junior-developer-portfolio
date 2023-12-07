@@ -221,6 +221,10 @@
 }
 
 @media screen and (max-height: 795px) and (max-width: 1200px) {
+  #home-text-content h1 {
+    font-size: 5rem;
+  }
+
   #home-headshot-container {
     height: 250px;
     width: 250px;
@@ -231,16 +235,28 @@
   }
 }
 
-@media screen and (max-height: 760px) and (max-width: 1200px) {
+@media screen and (max-height: 700px) and (max-width: 1200px) {
   #home-text-content h1 {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 
   #home-text-content p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 
   }
 
+  #home-headshot-container {
+    height: 200px;
+    width: 200px;
+  }
+
+  #home-headshot-container img {
+      height: 380px;
+  }
+
+}
+
+@media screen and (max-height: 620px) and (max-width: 1200px) {
   #home-headshot-container {
     display: none;
   }

@@ -1,0 +1,90 @@
+#skills {
+    padding-top: 70px;
+    margin: 0 auto;
+    height: fit-content;
+}
+
+#skills-icon-container {
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 10px; */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 12px;
+    width: 80%;
+    margin: 0 auto 15px auto;
+}
+
+.icon {
+    padding-top: 10px;
+    width: 80px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    
+    img {
+        height: 60px;
+    }
+    
+    p {
+        font-size: .8rem;
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+@media screen and (max-width: 800px){
+    .icon {
+        width: 70px;
+        height: 90px;
+    }
+    
+    .icon img {
+        height: 50px;
+    }
+    
+    .icon p {
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width: 460px){
+    #skills-icon-container {
+        width: fit-content;
+    }
+
+    .icon {
+        width: 60px;
+        height: 80px;
+    }
+    
+    .icon img {
+        height: 40px;
+    }
+    
+    .icon p {
+        font-size: .6rem;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .icon {
+        width: 55px;
+        height: 75px;
+    }
+    
+    .icon img {
+        height: 35px;
+    }
+    
+    .icon p {
+        font-size: .5rem;
+    }
+}

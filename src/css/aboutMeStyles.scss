@@ -2,8 +2,12 @@
 
 #aboutMe {
     padding-top: 70px;
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
+
+    p {
+        font-size: 1.2rem;
+    }
 
     a {
         display: block;
@@ -19,8 +23,26 @@
     }
 
     a:hover {
-        background-color: $primaryBackgroundColor;
+        background-color: #fff;
         color: $darkTertiaryColor;
         border-color: $darkTertiaryColor;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #aboutMe p {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #aboutMe p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #aboutMe p {
+        font-size: .9rem;
     }
 }

@@ -9,15 +9,46 @@ $subHeaderFontColor: #de5499;
   font-family: 'Times New Roman', Times, serif;
 }
 
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: $secondaryHeaderFooterColor;
+  background: $secondaryHeaderFooterColor;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $darkTertiaryColor;
+  border-radius: 20px;
+}
+
 #app {
-  background-color: $primaryBackgroundColor;
   color: #264143;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
 }
 
 #main-container {
+  width: 100vw;
+}
+
+.contain {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 20px;
+}
+
+.odd {
+    background-color: $primaryBackgroundColor;
+    clip-path: polygon(0% 10%, 100% 0%, 100% 95%, 0% 100%);
+}
+
+.even {
+  background-color: #fff;
 }
 
 h2 {

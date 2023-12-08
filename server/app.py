@@ -6,7 +6,7 @@ from flask_cors import CORS
 # Instantiate app, set attributes
 app = Flask(__name__)
 app.json.compact = False
-# UPDATE: app.secret_key = b'Y\xf1Xz\x00\xad|eQ\x80t \xca\x1a\x10K' 
+app.secret_key = b'[\xc0\xb8j\xbf\x97\x92Q\x91\xc4\xb4\xbe5\\\xe5\x01' 
 
 # Instantiate CORS
 CORS(app)
@@ -16,13 +16,21 @@ CORS(app)
 def index():
     return '<h1>Project Server</h1>'
 
-@app.route('/medium_info')
+@app.route('/medium_info', methods=['GET'])
 def medium_info():
     #Scrape medium's website at my medium url
     url = "https://medium.com/@kimberlymlove15"
     response = requests.get(url)
 
     soup = BeautifulSoup(response.text, "html.parser")
+
+    # Links to blogs
+    links_to_blogs = []
+    links_without_class = [link for link in soup.select('a') if link.get('class') == []]
+    for link in links_without_class:
+        first_href = link.get('href')
+        final_href = 'https://medium.com' + first_href
+        links_to_blogs.append(final_href)
 
     # Get dates associated with blogs
     dates = []
@@ -41,23 +49,25 @@ def medium_info():
 
     # Get profile img and blog image src's
     profile_img = soup.select('img.l.dh.bx.if.ig.fi')[0].get('src')
+    updated_profile_img_src = profile_img.replace('/resize:fill:96:96/', '/')
 
     images_without_class = [img for img in soup.select('img') if img.get('class') == []]
     blog_images = images_without_class[1::2]
-    blog_srcs = []
+    blog_img_srcs = []
     for img in blog_images:
         resize_src = img.get('src')
         new_src = resize_src.replace('/resize:fill:160:112/', '/')
-        blog_srcs.append(new_src)
+        blog_img_srcs.append(new_src)
 
     # combine all info into a single dictionary to return
     medium_info = {
-        "profile_img": profile_img,
+        "profile_img": updated_profile_img_src,
         "author_name": author_name,
         "dates": dates_wo_About,
         "blog_titles": blog_titles,
         "descriptions": descriptions,
-        "blog_srcs": blog_srcs
+        "blog_img_srcs": blog_img_srcs,
+        "links_to_blogs": links_to_blogs
     }
 
     return make_response(medium_info, 200)

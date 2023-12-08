@@ -5,36 +5,6 @@ import { faMedium } from '@fortawesome/free-brands-svg-icons'
 
 function Blog() {
 
-
-  // const blogsToDisplay = firstThreeBlogs.map((blog, index) => {
-  //   // Create a shorten description from the long blog descritpon
-  //   const indexOfp = blog.description.indexOf("<p>")
-  //   const start = indexOfp + 3
-  //   const end = start + 150
-  //   const shortDescription = blog.description.slice(start, end) + '...'
-
-  //   // Reformat the date
-  //   const blogDateTime = new Date(blog.pubDate);
-  //   const month = months[blogDateTime.getMonth()];
-  //   const day = blogDateTime.getDate();
-  //   const year = blogDateTime.getFullYear();
-  //   const formattedDate = month + " " + day + "," + year;
-
-  //   return (
-  //     <div key={index} className='blog'>
-  //       <div id="blog-text">
-  //         <p>{formattedDate}</p>
-  //         <p id="blog-title">{blog.title}</p>
-  //         <p>{shortDescription}</p>
-  //         <a href={blog.link} target='_blank' rel="noreferrer">Read more...</a>
-  //       </div>
-  //       <div id="blog-image">
-  //         <img src={blog.thumbnail} alit={`Thumbnail img for ${blog.title} blog`}/>
-  //       </div>
-  //     </div>
-  //   )
-  // })
-
   return (
     <div className='odd'>
       <div id="blogSection" className='contain' style={{paddingBottom: "20px"}}>

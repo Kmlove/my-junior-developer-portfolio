@@ -3,10 +3,12 @@ import requests
 from flask import Flask, make_response, jsonify
 from flask_cors import CORS
 
+import os
+
 # Instantiate app, set attributes
 app = Flask(__name__)
 app.json.compact = False
-app.secret_key = b'[\xc0\xb8j\xbf\x97\x92Q\x91\xc4\xb4\xbe5\\\xe5\x01' 
+app.secret_key = os.environ.get('SECRET_KEY') 
 
 # Instantiate CORS
 CORS(app)

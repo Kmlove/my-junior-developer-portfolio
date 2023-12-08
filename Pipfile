@@ -1,0 +1,11 @@
+[packages]
+requests = "2.28.1"
+bs4 = "0.0.1"
+flask = "*"
+Werkzeug = "2.2.2"
+flask-cors = "*"
+gunicorn = "*"
+psycopg2-binary = "*"
+
+[requires]
+python_version = "3.8.13"

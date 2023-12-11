@@ -36,6 +36,7 @@ function Blog() {
           </div>
           <div id="blogs-container">
             <h3 style={{margin: "0 auto", textAlign: "center"}}>Loading...</h3>
+            <p style={{margin: "0 auto", textAlign: "center"}}>Data coming from a custom API deployed on Render, takes 1-2 minutes for initial response to return.</p>
           </div>
         </div>
       </div>

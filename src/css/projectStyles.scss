@@ -86,6 +86,10 @@
     margin-bottom: 0;
 }
 
+#tile2 {
+    margin-bottom: 20px;
+}
+
 #links {
     display: flex;
     justify-content: center;
@@ -139,6 +143,12 @@
     border-color: $subHeaderFontColor !important;
 }
 
+@media screen and (max-width: 1310px){
+    #tile2 {
+        margin-bottom: 40px;
+    }
+}
+
 @media screen and (max-width: 1140px){
     .project-tile {
         width: 100%;
@@ -169,6 +179,7 @@
 
     #tile2 {
         flex-direction: column-reverse;
+        margin-bottom: -80px;
     }
 
     .right {

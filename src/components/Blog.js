@@ -12,7 +12,7 @@ function Blog() {
   const [ mediumData, setMediumData ] = useState()
 
   useEffect(() => {
-    fetch('https://medium-blog-api.onrender.com/medium_info')
+    fetch('/medium_info')
     .then(res => res.json())
     .then(data => {
       setMediumData(data)

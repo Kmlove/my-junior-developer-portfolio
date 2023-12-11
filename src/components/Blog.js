@@ -27,7 +27,7 @@ function Blog() {
               <a href="https://medium.com/@kimberlymlove15/sqlalchemy-relationship-status-its-complicated-backref-vs-back-populates-9eaf07335a13" target='_blank' rel="noreferrer">Read more...</a>
             </div>
             <div id="blog-image">
-              <img src='https://miro.medium.com/v2/format:webp/0*JGmWuZQn8JctfqOf.png' alit={`Thumbnail img for SQLAlchemy Relationship Status blog`}/>
+              <img src='https://miro.medium.com/v2/format:webp/0*JGmWuZQn8JctfqOf.png' alt={`Thumbnail img for SQLAlchemy Relationship Status blog`}/>
             </div>
           </div>
 
@@ -39,7 +39,7 @@ function Blog() {
               <a href="https://medium.com/@kimberlymlove15/lambda-me-this-270807e841f8" target='_blank' rel="noreferrer">Read more...</a>
             </div>
             <div id="blog-image">
-              <img src='https://miro.medium.com/v2/format:webp/1*58IXFkGTS2WZK_XIjeR7pg.png' alit={`Thumbnail img for Lambda Me This blog`}/>
+              <img src='https://miro.medium.com/v2/format:webp/1*58IXFkGTS2WZK_XIjeR7pg.png' alt={`Thumbnail img for Lambda Me This blog`}/>
             </div>
           </div>
 
@@ -47,11 +47,11 @@ function Blog() {
             <div id="blog-text">
               <p>Sept 5</p>
               <p id="blog-title">Destructuring Destructured</p>
-              <p>When you see a word like destructuring it can be very intimidating, especially when you’re first starting out in the coding world. However, once you get the hang of this JavaScript shorthand it can save you...</p>
+              <p>When you see a word like destructuring it can be very intimidating, especially when you're first starting out in the coding world. However, once you get the hang of this JavaScript shorthand it can save you...</p>
               <a href="https://medium.com/@kimberlymlove15/destructuring-destructured-bc724e9a7c6" target='_blank' rel="noreferrer">Read more...</a>
             </div>
             <div id="blog-image">
-              <img src='https://miro.medium.com/v2/format:webp/1*NVF8x6T_t9939oZUI4oswQ.jpeg' alit={`Thumbnail img for Destructuring Destructured blog`}/>
+              <img src='https://miro.medium.com/v2/format:webp/1*NVF8x6T_t9939oZUI4oswQ.jpeg' alt={`Thumbnail img for Destructuring Destructured blog`}/>
             </div>
           </div>
 

@@ -46,7 +46,7 @@ function Blog() {
   return (
     <div className='odd'>
       <div id="blogSection" className='contain' style={{paddingBottom: "20px"}}>
-        <h2>My Blog Posts</h2>
+        <h2 style={{paddingTop: '12px'}}>My Blog Posts</h2>
         <div id="blog-header">
           <img src={mediumData.profile_img} alt="Kim's profile pic from Medium" />
           <h4>Kimberly Love</h4>

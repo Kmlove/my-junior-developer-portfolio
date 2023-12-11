@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Kim's Software Developer Project Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my software developer portfolio page! Here you'll be able to:
+ - Learn a little more about me in my About Me section and view a copy of my resume.
+ - Explore three of my top projects in the Project section, giving quick access to GitHub repos and live sites.
+ - Check out my 3 most recent blogs on Medium in the Blogs section.
+ - Easily contact me from the Contact Me section via email or a contact me form.
 
-## Available Scripts
+## Technologies
+React, JavaScript, CSS, Sass, Python, Flask
 
-In the project directory, you can run:
+## To Run In Development Environment
+1. Fork and clone the repo
+2. ```npm install``` and ```pipenv install```
+3. ```pipenv shell```
+4. cd into server and run ```python app.py``` to start server
+5. From the root folder run ```npm start```
 
-### `npm start`
+## Branches
+- server-for-blog
+- hardcoded-blog-section
+- rss2json-blog-section
+- deployment
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## server-for-blog Branch
+On the server-to-blog branch I have built a custom API in order to get the data that is displayed in the blog section of the portfolio. The API code lives in the server folder. This API scrapes my Medium account's profile page and returns specific data which is then displayed. The API is hosted on Render, so it can sometimes take 1-2 minutes to spin up and return the data. The benefit of using this method is that it is dynamic, and whenever I write a new blog, it will automatically update the information displayed in the blog section of my portfolio. The downfall is method is that if the API is inactive, it will spin down, causing a delay in returning the blog information when a new request is made to the API. I use python and Flask to build this API.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## hardcoded-blog Branch
+On the hardcoded-blog branch I have hardcoded the information for my latest 3 blogs. The benefit of this method is that there is no delay in displaying the information about the blogs. The downfall to this method is that it is not dynamic, so anytime I create a new blog I need to go into my code for manually update it with new information. 
 
-### `npm test`
+## rss2json-blog-section Branch
+On the rss2json-blog-section branch, I use a rss2json API to retrieve the data from my Medium profile page. The benefit of using this method is that it is dynamic, and whenever I write a new blog, it will automatically update the information displayed in the blog section of my portfolio. The downfall is that the API very frequently has errors and doesn't return any information, so it is not reliable. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## deployment Branch
+This is the branch that is deployed on Render. 

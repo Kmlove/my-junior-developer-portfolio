@@ -6,6 +6,9 @@ Welcome to my software developer portfolio page! Here you'll be able to:
  - Check out my 3 most recent blogs on Medium in the Blogs section.
  - Easily contact me from the Contact Me section via email or a contact me form.
 
+## Live Site
+https://kimlove.onrender.com
+
 ## Technologies
 React, JavaScript, CSS, Sass, Python, Flask
 

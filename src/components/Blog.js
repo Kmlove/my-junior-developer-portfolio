@@ -66,7 +66,7 @@ function Blog() {
               <a href={mediumData.links_to_blogs[0]} target='_blank' rel="noreferrer">Read more...</a>
             </div>
             <div id="blog-image">
-              <img src={mediumData.blog_img_srcs[0]} alit={`Thumbnail img for ${mediumData.blog_titles[0]} blog`}/>
+              <img src={mediumData.blog_img_srcs[0]} alt={`Thumbnail img for ${mediumData.blog_titles[0]} blog`}/>
             </div>
           </div>
 
@@ -78,7 +78,7 @@ function Blog() {
               <a href={mediumData.links_to_blogs[1]} target='_blank' rel="noreferrer">Read more...</a>
             </div>
             <div id="blog-image">
-              <img src={mediumData.blog_img_srcs[1]} alit={`Thumbnail img for ${mediumData.blog_titles[1]} blog`}/>
+              <img src={mediumData.blog_img_srcs[1]} alt={`Thumbnail img for ${mediumData.blog_titles[1]} blog`}/>
             </div>
           </div>
 
@@ -90,7 +90,7 @@ function Blog() {
               <a href={mediumData.links_to_blogs[2]} target='_blank' rel="noreferrer">Read more...</a>
             </div>
             <div id="blog-image">
-              <img src={mediumData.blog_img_srcs[2]} alit={`Thumbnail img for ${mediumData.blog_titles[2]} blog`}/>
+              <img src={mediumData.blog_img_srcs[2]} alt={`Thumbnail img for ${mediumData.blog_titles[2]} blog`}/>
             </div>
           </div>
 

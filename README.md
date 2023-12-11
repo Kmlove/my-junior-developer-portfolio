@@ -4,7 +4,7 @@ Welcome to my software developer portfolio page! Here you'll be able to:
  - Learn a little more about me in my About Me section and view a copy of my resume.
  - Explore three of my top projects in the Project section, giving quick access to GitHub repos and live sites.
  - Check out my 3 most recent blogs on Medium in the Blogs section.
- - Easily contact me from the Contact Me section via email or a contact me form.
+ - Easily contact me from the Contact Me section via email or a contact form.
 
 ## Live Site
 https://kimlove.onrender.com

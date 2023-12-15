@@ -40,9 +40,10 @@ function Projects() {
                   <img className="icon-p" src={sqliteIcon} alt='SQLite Icon'/>
               </div>
               <div id="links">
-                <a className="disabled-link" href="" target='_blank' title='GoodSport not yet live' rel="noreferrer" onClick={e => e.preventDefault()}>Live Site</a>
+                <a href="https://goodsport-app.onrender.com" target='_blank' title='GoodSport live on render' rel="noreferrer">Live Site</a>
                 <a href='https://github.com/Kmlove/GoodSport-Phase-5-Project' target="_blank" title='GoodSport on GitHub' rel="noreferrer">GitHub</a>
               </div>
+              <p style={{marginBottom: "0", color: "red", fontSize: ".8rem"}}>* Deployed on Render, takes 1 - 2 minutes to spin up.</p>
             </div>
           </div>{/*end tile1 div*/}
 
@@ -87,7 +88,7 @@ function Projects() {
                   <img className="icon-p" src={sqliteIcon} alt='SQLite Icon'/>
               </div>
               <div id="links">
-                <a className="disabled-link" href="" target='_blank' title='FlatStop not yet live' rel="noreferrer" onClick={e => e.preventDefault()}>Live Site</a>
+                <a style={{opacity: "0"}} className="disabled-link" href="" target='_blank' title='FlatStop not yet live' rel="noreferrer" onClick={e => e.preventDefault()}>Live Site</a>
                 <a href='https://github.com/Kmlove/FlatStop-Phase-3' target="_blank" title='FlatStop on GitHub' rel="noreferrer">GitHub</a>
               </div>
             </div>

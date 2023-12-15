@@ -88,3 +88,15 @@
         font-size: .5rem;
     }
 }
+
+@media screen and (max-width: 340px){
+    .icon {
+        width: 50px;
+        height: 70px;
+    }
+    
+    .icon img {
+        height: 30px;
+    }
+    
+}

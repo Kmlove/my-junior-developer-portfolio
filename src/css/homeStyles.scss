@@ -1,88 +1,100 @@
-@import './index';
+@import "./index";
 
 @keyframes bounce {
-    0% {
-        transform: translateY(-300px);
-    } 
-    20%, 50%, 80%, 100% {
-      transform: translateY(0);
-    }
-    40% {
-      transform: translateY(-25px);
-    }
-    60% {
-      transform: translateY(-15px);
-    }
+  0% {
+    transform: translateY(-300px);
+  }
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-25px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes slideInFromRight {
-    0% {
-      transform: translateX(300px);
-    } 
-    20%, 50%, 80%, 100% {
-      transform: translateX(0);
-    }
-    40% {
-      transform: translateX(30px);
-    }
-    60% {
-      transform: translateX(15px);
-    }
+  0% {
+    transform: translateX(300px);
+  }
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(30px);
+  }
+  60% {
+    transform: translateX(15px);
+  }
 }
 
 #home {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 95vh;
-    padding-top: 50px;
-    padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 95vh;
+  padding-top: 50px;
+  padding: 5px;
 }
-  
+
 #home-text-content p {
-    color: $subHeaderFontColor;
-    font-size: 2rem;
-    font-style: italic;
-    animation: fadeIn 1s ease-in;
+  color: $subHeaderFontColor;
+  font-size: 2rem;
+  font-style: italic;
+  animation: fadeIn 1s ease-in;
 }
-  
+
 #home-text-content h1 {
-    color: $darkTertiaryColor;
-    font-size: 10rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    //font-family: 'Comic Sans MS', cursive, sans-serif; /* Use a fun font */
-    font-style: italic;
-    animation: bounce 1.5s ease-in-out; /* Add bounce animation */
+  color: $darkTertiaryColor;
+  font-size: 10rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  //font-family: 'Comic Sans MS', cursive, sans-serif; /* Use a fun font */
+  font-style: italic;
+  animation: bounce 1.5s ease-in-out; /* Add bounce animation */
 }
 
 #home-headshot-container {
-    height: 380px;
-    width: 380px;
-    border-radius: 50%;
-    background-color: $secondaryHeaderFooterColor;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    animation: slideInFromRight 1.5s ease-in-out;
+  height: 380px;
+  width: 380px;
+  border-radius: 50%;
+  background-color: $secondaryHeaderFooterColor;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  animation: slideInFromRight 1.5s ease-in-out;
 }
 
 #home-headshot-container img {
-    height: 550px;
+  height: 550px;
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1300px) {
+  #home-headshot-container {
+    position: relative;
+    top: 30px;
+  }
+}
 
-  #home{
+@media screen and (max-width: 1200px) {
+  #home {
     flex-direction: column;
     justify-content: center;
     gap: 50px;
@@ -90,7 +102,7 @@
 
   #home-text-content h1 {
     font-size: 9rem;
-}
+  }
 
   #home-text-content p {
     font-size: 1.6rem;
@@ -102,35 +114,31 @@
   }
 
   #home-headshot-container img {
-      height: 500px;
+    height: 500px;
   }
-
 }
 
-@media screen and (max-width: 800px){
-  
+@media screen and (max-width: 800px) {
   #home-text-content h1 {
-      font-size: 8rem;
+    font-size: 8rem;
   }
-  
+
   #home-text-content p {
     font-size: 1.5rem;
   }
-  
+
   #home-headshot-container {
     height: 280px;
     width: 280px;
   }
-  
-  #home-headshot-container img {
-      height: 450px;
-  }
 
+  #home-headshot-container img {
+    height: 450px;
+  }
 }
 
-@media screen and (max-width: 600px){
-
-  #home{
+@media screen and (max-width: 600px) {
+  #home {
     gap: 40px;
   }
 
@@ -149,13 +157,12 @@
   }
 
   #home-headshot-container img {
-      height: 420px;
+    height: 420px;
   }
 }
 
-@media screen and (max-width: 480px){
-
-  #home{
+@media screen and (max-width: 480px) {
+  #home {
     gap: 30px;
   }
 
@@ -178,7 +185,7 @@
   }
 
   #home-headshot-container img {
-      height: 400px;
+    height: 400px;
   }
 }
 
@@ -188,9 +195,8 @@
   }
 }
 
-@media screen and (max-width: 335px){
-
-  #home{
+@media screen and (max-width: 335px) {
+  #home {
     gap: 40px;
   }
 
@@ -199,7 +205,7 @@
   }
 
   #home-text-content p {
-    font-size: .8rem;
+    font-size: 0.8rem;
     margin-bottom: 0;
   }
 
@@ -209,7 +215,7 @@
   }
 
   #home-headshot-container img {
-      height: 320px;
+    height: 320px;
   }
 }
 
@@ -220,7 +226,6 @@
 
   #home-text-content p {
     font-size: 1.5rem;
-
   }
 }
 
@@ -235,7 +240,7 @@
   }
 
   #home-headshot-container img {
-      height: 400px;
+    height: 400px;
   }
 }
 
@@ -246,7 +251,6 @@
 
   #home-text-content p {
     font-size: 1.3rem;
-
   }
 
   #home-headshot-container {
@@ -255,9 +259,8 @@
   }
 
   #home-headshot-container img {
-      height: 380px;
+    height: 380px;
   }
-
 }
 
 @media screen and (max-height: 620px) and (max-width: 1200px) {
@@ -273,6 +276,5 @@
 
   #home-text-content p {
     font-size: 1rem;
-
   }
 }

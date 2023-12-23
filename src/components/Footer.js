@@ -52,7 +52,7 @@ function Footer() {
         <a href="mailto:kimberlymlove15@gmail.com" >
           <FontAwesomeIcon icon={faEnvelope} className="social-icons-footer" title="Email Kim directly"/>
         </a>
-        <a href='/Kimberly-Love-Resume.pdf' target='_blank'>
+        <a style={{display: "none"}} href='/Kimberly-Love-Resume.pdf' target='_blank'>
           <FontAwesomeIcon icon={faFile} className="social-icons-footer" title="Open Kim's resume"/>
         </a>
       </div>

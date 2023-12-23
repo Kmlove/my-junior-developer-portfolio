@@ -6,9 +6,11 @@ function LargeNavbar({KLlogo}) {
 
     return (
         <Navbar id="large-nav">
-            <div id="KLlogo">
-                <img src={KLlogo} alt='Kimberly Love Logo' />
-            </div>
+            <a href='#home'>
+                <div id="KLlogo">
+                    <img src={KLlogo} alt='Kimberly Love Logo' />
+                </div>
+            </a>
             <Nav variant="underline">
                 <Nav.Item>
                     <Nav.Link eventKey="#home" href="#home">Home</Nav.Link>

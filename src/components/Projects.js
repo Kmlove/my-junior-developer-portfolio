@@ -72,9 +72,7 @@ function Projects() {
                 >
                   GitHub
                 </a>
-                <Link to="projects/GoodSport#detail-container">
-                  More Details
-                </Link>
+                <Link to="projects/GoodSport#detail-page">More Details</Link>
               </div>
               <p
                 className="render-warning"
@@ -116,7 +114,7 @@ function Projects() {
                 <img className="icon-p" src={sqliteIcon} alt="SQLite Icon" />
               </div>
               <div id="links">
-                <Link to="projects/FitConnect">More Details</Link>
+                <Link to="projects/FitConnect#detail-page">More Details</Link>
                 <a
                   href="https://fitconnect-app.onrender.com"
                   target="_blank"
@@ -199,7 +197,7 @@ function Projects() {
                 >
                   GitHub
                 </a>
-                <Link to="projects/FlatStop">More Details</Link>
+                <Link to="projects/FlatStop#detail-page">More Details</Link>
               </div>
             </div>
           </div>

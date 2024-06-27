@@ -1,0 +1,25 @@
+@import './index';
+
+.detail-page {
+    width: 100vw;
+    background: repeating-linear-gradient(
+        -15deg, /* Angle of the stripes */
+        white, /* First color */
+        white 100px, /* Width of the first color */
+        $primaryBackgroundColor 100px, /* Start of the second color */
+        $primaryBackgroundColor 200px /* Width of the second color */
+    )!important;
+    padding-top: 15px;
+}
+
+.detail-container {
+    border: 1px solid red;
+    width: 85%;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.detail-header {
+    text-align: center;
+    margin-top: 20px;
+}

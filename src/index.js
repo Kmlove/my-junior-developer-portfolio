@@ -25,11 +25,19 @@ const router = createBrowserRouter([
   },
   {
     path: "projects/FitConnect",
-    element: <FitConnectDetails />,
+    element: (
+      <ReusableDetailContainer detailPageHeader="FitConnect Project Details:">
+        <FitConnectDetails />
+      </ReusableDetailContainer>
+    ),
   },
   {
     path: "projects/FlatStop",
-    element: <FlatStopDetils />,
+    element: (
+      <ReusableDetailContainer detailPageHeader="FlatStop Project Details:">
+        <FlatStopDetils />
+      </ReusableDetailContainer>
+    ),
   },
 ]);
 

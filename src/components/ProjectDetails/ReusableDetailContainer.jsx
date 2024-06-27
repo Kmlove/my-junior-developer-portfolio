@@ -22,7 +22,7 @@ function ReusableDetailContainer({ children, detailPageHeader }) {
   return (
     <div
       className="detail-page"
-      style={{ height: viewportWidth > 630 ? "100vh" : "100%" }}
+      style={{ height: viewportWidth > 1500 ? "100vh" : "100%" }}
     >
       {viewportWidth > 630 ? (
         <LargeDetailNavBar KLlogo={KLlogo} />

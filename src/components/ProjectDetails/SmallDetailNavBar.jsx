@@ -15,7 +15,7 @@ function SmallDetailNavBar({ KLlogo }) {
 
   return (
     <Navbar expanded={expanded} expand="lg" id="small-nav">
-      <Link to="/">
+      <Link to="/#home">
         <div id="KLlogo">
           <img src={KLlogo} alt="Kimberly Love Logo" />
         </div>
@@ -26,7 +26,7 @@ function SmallDetailNavBar({ KLlogo }) {
       />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto text-end">
-          <Link onClick={handleNavLinkClick} to="/">
+          <Link onClick={handleNavLinkClick} to="/#home">
             Home
           </Link>
         </Nav>

@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import ReusableDetailContainer from "./components/ProjectDetails/ReusableDetailContainer";
 import GoodSportDetails from "./components/ProjectDetails/GoodSportDetails";
 import FitConnectDetails from "./components/ProjectDetails/FitConnectDetails";
 import FlatStopDetils from "./components/ProjectDetails/FlatStopDetils";
@@ -16,7 +17,11 @@ const router = createBrowserRouter([
   },
   {
     path: "projects/GoodSport",
-    element: <GoodSportDetails />,
+    element: (
+      <ReusableDetailContainer detailPageHeader="GoodSport Project Details:">
+        <GoodSportDetails />
+      </ReusableDetailContainer>
+    ),
   },
   {
     path: "projects/FitConnect",

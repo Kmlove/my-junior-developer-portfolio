@@ -3,9 +3,11 @@ import "../../css/projectDetailStyles.scss";
 import KLlogo from "../../images/Kimberly-Love-Logo-Color-Zoomed.png";
 import LargeDetailNavBar from "./LargeDetailNavBar";
 import SmallDetailNavBar from "./SmallDetailNavBar";
+import { useLocation } from "react-router-dom";
 
 function ReusableDetailContainer({ children, detailPageHeader }) {
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
+  const location = useLocation();
 
   useEffect(() => {
     const handleResize = () => {
@@ -18,6 +20,16 @@ function ReusableDetailContainer({ children, detailPageHeader }) {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  useEffect(() => {
+    if (location.hash) {
+      const className = location.hash.replace("#", "");
+      const element = document.querySelector(`.${className}`);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
 
   return (
     <div

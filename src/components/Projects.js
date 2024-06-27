@@ -11,6 +11,7 @@ import pythonIcon from "../images/python.svg";
 import flaskIcon from "../images/flask.svg";
 import sqlIcon from "../images/sql.svg";
 import sqliteIcon from "../images/sqlite.svg";
+import { Link } from "react-router-dom";
 
 function Projects() {
   return (
@@ -71,6 +72,7 @@ function Projects() {
                 >
                   GitHub
                 </a>
+                <Link to="projects/GoodSport">More Details</Link>
               </div>
               <p
                 className="render-warning"
@@ -112,6 +114,7 @@ function Projects() {
                 <img className="icon-p" src={sqliteIcon} alt="SQLite Icon" />
               </div>
               <div id="links">
+                <Link to="projects/FitConnect">More Details</Link>
                 <a
                   href="https://fitconnect-app.onrender.com"
                   target="_blank"
@@ -175,7 +178,7 @@ function Projects() {
                 <img className="icon-p" src={sqliteIcon} alt="SQLite Icon" />
               </div>
               <div id="links">
-                <a
+                {/* <a
                   style={{ opacity: "0" }}
                   className="disabled-link"
                   href=""
@@ -185,7 +188,7 @@ function Projects() {
                   onClick={(e) => e.preventDefault()}
                 >
                   Live Site
-                </a>
+                </a> */}
                 <a
                   href="https://github.com/Kmlove/FlatStop-Phase-3"
                   target="_blank"
@@ -194,6 +197,7 @@ function Projects() {
                 >
                   GitHub
                 </a>
+                <Link to="projects/FlatStop">More Details</Link>
               </div>
             </div>
           </div>

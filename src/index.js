@@ -1,17 +1,37 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './css/index.scss';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./css/index.scss";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import GoodSportDetails from "./components/ProjectDetails/GoodSportDetails";
+import FitConnectDetails from "./components/ProjectDetails/FitConnectDetails";
+import FlatStopDetils from "./components/ProjectDetails/FlatStopDetils";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+  {
+    path: "projects/GoodSport",
+    element: <GoodSportDetails />,
+  },
+  {
+    path: "projects/FitConnect",
+    element: <FitConnectDetails />,
+  },
+  {
+    path: "projects/FlatStop",
+    element: <FlatStopDetils />,
+  },
+]);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

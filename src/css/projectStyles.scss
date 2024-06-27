@@ -285,9 +285,13 @@
         width: 100%;
     }
 
-    #links a {
-        width: 80px;
-        font-size: .8rem;
+    #links { 
+        gap: 10px;
+
+        a {
+            width: 80px;
+            font-size: .8rem;
+        }
     }
 
     .render-warning {

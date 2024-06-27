@@ -72,7 +72,9 @@ function Projects() {
                 >
                   GitHub
                 </a>
-                <Link to="projects/GoodSport">More Details</Link>
+                <Link to="projects/GoodSport#detail-container">
+                  More Details
+                </Link>
               </div>
               <p
                 className="render-warning"

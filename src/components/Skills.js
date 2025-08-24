@@ -19,6 +19,13 @@ import javaIcon from "../images/java.svg";
 import gitlabIcon from "../images/gitlab.svg";
 import postgresqlIcon from "../images/postgresql.svg";
 import springbootIcon from "../images/Spring_Boot.svg.png";
+import vueIcon from "../images/VueJS.svg";
+import nestIcon from "../images/NestJS.svg";
+import grafanaIcon from "../images/Grafana.svg";
+import jestIcon from "../images/Jest.svg";
+import ampltidueLogo from "../images/amplitude.svg";
+import playwrightIcon from "../images/Playwright.svg";
+import typescriptIcon from "../images/Typescript.svg";
 
 function Skills() {
   return (
@@ -27,16 +34,20 @@ function Skills() {
         <h2>Skills & Tools</h2>
         <div id="skills-icon-container">
           <div className="icon">
-            <img src={htmlIcon} alt="HTML Icon" />
-            <p>HTML 5</p>
-          </div>
-          <div className="icon">
-            <img src={cssIcon} alt="CSS Icon" />
-            <p>CSS 3</p>
-          </div>
-          <div className="icon">
             <img src={javascriptIcon} alt="JavaScript Icon" />
             <p>JavaScript</p>
+          </div>
+          <div className="icon">
+            <img src={typescriptIcon} alt="Typescript Icon" />
+            <p>TypeScript</p>
+          </div>
+          <div className="icon">
+            <img src={vueIcon} alt="Vue Icon" />
+            <p>Vue</p>
+          </div>
+          <div className="icon">
+            <img src={nestIcon} alt="NestJS Icon" />
+            <p>NestJS</p>
           </div>
           <div className="icon">
             <img src={reactIcon} alt="React Icon" />
@@ -73,6 +84,30 @@ function Skills() {
           <div className="icon">
             <img src={sqliteIcon} alt="SQLite Icon" />
             <p>SQLite</p>
+          </div>
+          <div className="icon">
+            <img src={ampltidueLogo} alt="Amplitude Analytics Icon" />
+            <p>Amplitude Analytics</p>
+          </div>
+          <div className="icon">
+            <img src={grafanaIcon} alt="Grafana Icon" />
+            <p>Grafana</p>
+          </div>
+          <div className="icon">
+            <img style={{ width: '60px' }} src={playwrightIcon} alt="Playwright Icon" />
+            <p>Playwright</p>
+          </div>
+          <div className="icon">
+            <img src={jestIcon} alt="Jest Icon" />
+            <p>Jest</p>
+          </div>
+          <div className="icon">
+            <img src={htmlIcon} alt="HTML Icon" />
+            <p>HTML 5</p>
+          </div>
+          <div className="icon">
+            <img src={cssIcon} alt="CSS Icon" />
+            <p>CSS 3</p>
           </div>
           <div className="icon">
             <img src={githubIcon} alt="GitHub Icon" />

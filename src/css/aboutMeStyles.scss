@@ -27,6 +27,28 @@
         color: $darkTertiaryColor;
         border-color: $darkTertiaryColor;
     }
+
+    h3 {
+        color: $darkTertiaryColor;
+    }
+
+    button {
+        display: block;
+        border: 1px solid $subHeaderFontColor;
+        background-color: $subHeaderFontColor;
+        padding: 4px;
+        width: 100px;
+        text-decoration: none;
+        border-radius: 5px;
+        color: #fff;
+        text-align: center;
+    }
+
+    button:hover {
+        background-color: #fff;
+        color: $darkTertiaryColor;
+        border-color: $darkTertiaryColor;
+    }
 }
 
 @media screen and (max-width: 1000px) {

@@ -11,8 +11,22 @@ nav.navbar {
 }
 
 // Large Navbar Styles
+#large-nav {
+    max-height: 86px;
+}
+
 .navbar-nav {
     margin-right: 150px;
+}
+
+.nav-scoped {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navlinks-wrapper {
+    gap: 10px;
+    align-items: center;
 }
 
 .nav-item a {
@@ -28,6 +42,10 @@ nav.navbar {
 .nav-item a.active{
     color: $darkTertiaryColor !important;
     text-decoration: none !important;
+}
+
+.navlinks-wrapper {
+    display: flex;
 }
 
 // Small NavBar Styles

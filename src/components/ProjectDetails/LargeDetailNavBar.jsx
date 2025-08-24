@@ -12,7 +12,10 @@ function LargeDetailNavBar({ KLlogo }) {
       </Link>
       <Nav variant="underline">
         <Nav.Item>
-          <Link to="/#home">Home</Link>
+          <Link to="/#projects" style={{textDecoration: 'none'}}>Back to Projects</Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Link style={{textDecoration: 'none'}}to="/#home">Home</Link>
         </Nav.Item>
       </Nav>
     </Navbar>

@@ -26,8 +26,11 @@ function SmallDetailNavBar({ KLlogo }) {
       />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto text-end">
-          <Link onClick={handleNavLinkClick} to="/#home">
+          <Link onClick={handleNavLinkClick} to="/#home" style={{textDecoration: 'none'}}>
             Home
+          </Link>
+          <Link onClick={handleNavLinkClick} to="/#projects" style={{textDecoration: 'none'}}>
+            Back to Projects
           </Link>
         </Nav>
       </Navbar.Collapse>
